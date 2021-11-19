@@ -1,0 +1,156 @@
+<div class="reportexpenses">
+
+    <div class="topbtn">
+
+        <button class="overview" type="button" [routerLink]="['/reports/payroll']">Payroll</button>
+        <button class="run" type="button" [routerLink]="['/reports/expenses']">Expenses</button>
+
+    </div>
+
+    <!-- form with the proceed button -->
+
+    <div class="forms">
+
+        <form class="row shadow">
+
+            <div class="col-2 display">
+                <p id="head"><strong>Run Type</strong></p>
+                <select class="form-select drops" aria-label="">
+                    <option selected hidden disabled></option>
+                    <option value="1">All</option>
+                    <option value="1">Weekly</option>
+                    <option value="2">Bi-Monthly</option>
+                    <option value="3">Monthly</option>
+                </select>
+            </div>
+
+            <div class="col-2 display">
+                <p id="head"><strong>Department</strong></p>
+                <select class="form-select drops" aria-label="">
+                    <option selected hidden disabled></option>
+                    <option value="1">All</option>
+                    <option value="1">Department 1</option>
+                    <option value="2">Department 2</option>
+                    <option value="3">Department 3</option>
+                </select>
+            </div>
+
+            <div class="col-2 display">
+                <p id="head"><strong>Month</strong></p>
+                <select class="form-select drops" aria-label="">
+                    <option selected hidden disabled></option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="1">April</option>
+                    <option value="2">May</option>
+                    <option value="3">June</option>
+                    <option value="1">July</option>
+                    <option value="2">August</option>
+                    <option value="3">September</option>
+                    <option value="1">October</option>
+                    <option value="2">November</option>
+                    <option value="3">December</option>
+                </select>
+            </div>
+            <div class="col-2 display">
+                <p id="head"><strong>Year</strong></p>
+                <select class="form-select drops" aria-label="">
+                    <option selected hidden disabled></option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+
+            <div class="col-4 dwnreport">
+                <button class="download">Download Report</button>
+            </div>
+
+
+        </form>
+
+    </div>
+
+    <div class="row boxes">
+
+        <div class="col-3 reimbursed">
+
+            <p class="text-center color"><strong>Total Expenses Reimbursed</strong></p>
+
+            <p class="text-center color"><strong>1.26M</strong></p>
+
+            <div class="row amazing">
+
+                <div class="col-3 text-center">
+
+                    <p>44 %</p>
+
+                    <p>Change</p>
+
+                </div>
+
+                <div class="col-3">
+
+                    <hr class="perpendicular-line">
+
+                </div>
+
+                <div class="col-3">
+
+                    <p>0.6M</p>
+
+                    <p>Previous</p>
+
+                </div>
+
+            </div>
+
+            <div class=" dwnreport downin text-center">
+                <button class="download">Download</button>
+            </div>
+
+        </div>
+
+
+        <div class="col-3 approved">
+
+            <p class="text-center color"><strong>Total Expenses Approved</strong></p>
+
+            <p class="text-center color"><strong>508</strong></p>
+
+            <div class="row amazing">
+
+                <div class="col-3 text-center">
+
+                    <p>63%</p>
+
+                    <p>Change</p>
+
+                </div>
+
+                <div class="col-3">
+
+                    <hr class="perpendicular-line">
+
+                </div>
+
+                <div class="col-3">
+
+                    <p>213</p>
+
+                    <p>Previous</p>
+
+                </div>
+
+            </div>
+
+            <div class=" dwnreport downin text-center">
+                <button class="download">Download</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

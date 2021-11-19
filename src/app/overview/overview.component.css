@@ -1,0 +1,93 @@
+.body {
+  margin-top: 3%;
+  margin-left: 4%;
+  margin-right: 2%;
+  margin-bottom: 5.5%;
+  padding-right: 13%;
+  padding-bottom: 5%;
+}
+
+button+button {
+  margin-left: 20px;
+}
+
+button {
+  width: 197px;
+  height: 37px;
+  color: #004763;
+  border-color: #004763;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border-radius: -2px;
+}
+
+#current {
+  background-color: #004763;
+  color: #FFFFFF;
+}
+
+.wrapper {
+  padding-top: 4em;
+  color: #004763;
+  box-shadow: 5px 5px 8px gray;
+  padding-bottom: 1em;
+  margin-top: 3em;
+  padding-top: 1em;
+  padding-left: 1em;
+}
+
+span+span {
+  margin-left: 43px;
+}
+
+span+a {
+  margin-left: 10em;
+}
+
+table {
+  margin-top: 3%;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+th {
+  column-gap: 20px;
+  justify-content: space-between;
+  color: #004763;
+}
+
+#App-Button {
+  width: 100px;
+  height: 20px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+#name {
+  color: #004763;
+}
+
+button:hover {
+  background: #004763;
+  color: #FFFFFF;
+  font-weight: 900;
+}
+
+button:active {
+  background-color: #004763;
+}
+
+tbody {
+  height: 120px;
+  padding: 10px;
+}
+
+.container-fluid {
+  margin-right: 0rem;
+}
+
+#lastinline {
+  margin-left: 8rem;
+  background-color: #004763;
+  color: #FFFFFF;
+}

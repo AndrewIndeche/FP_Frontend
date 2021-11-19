@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Approve Payroll</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css"
+        integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css"
+        integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="aprove">
+        <!-- top 3 buttons -->
+        <div class="topbuttons">
+            <button class="overview" type="button" routerLink='/payoverview'>Overview</button>
+            <button class="run" type="button" [routerLink]="['/payroll/run_payroll/payments']">Run Payroll</button>
+            <button class="advance" type="button">Advance Request</button>
+        </div>
+        <!-- links after the buttons -->
+        <div class=" links">
+            <a routerLink="/payroll/run_payroll/new_run">New Run</a>
+            <a routerLink="/payroll/run_payroll/review">Review</a>
+            <a routerLink="/payroll/run_payroll/approve_run" id="new">Approve Run</a>
+            <a routerLink="/payroll/run_payroll/payments">Payments</a>
+        </div>
+        <div class="download new">
+            <a href=""><i class="fa fa-cloud-download" aria-hidden="true"><span class="pad">Download
+                        Excel</span></i></a>
+        </div>
+        <div class="box">
+            <p id="minis">Payroll Summary</p>
+            <p id="line">*KES 1,542,600.95 will be debited to your account on 29th June 2021. Thirteen(13) Staff will be paid within
+                24 hours.
+            </p>
+            <p id="figures"> Total Net Pay <span id="right1">KES 1,000,600.95</span></p>
+            <p id="figures"> Total Deductions <span id="right2">KES 306,120</span></p>
+            <p id="figures"> Total Tax to remit <span id="right">KES 238,116.95</span></p>
+            <hr>
+            <p id="total"><strong>Debit Amount <span id="right3">KES 1,542,600.95</span></strong></p>
+            <p id="minis">*Breakdown of Tax and other deductions</p>
+            <p id="figures1"> P.A.Y.E <span id="paye">KES 238,116.95</span></p>
+            <p id="figures1"> Insurance Fund(NHIF) <span id="nhif">KES 30,120</span></p>
+            <p id="figures1"> Retirement Fund(NSSF)<span id="nssf">KES 28,120</span></p>
+            <hr>
+            <p id="taxes"><strong>*You have a total os KES 238,116.95 in Goverment Taxes that You are responsible to
+                    remit</strong>
+            </p>
+            <div class="form-check thick">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    <strong>Send Text and Email Notifications to staff after approving the Pay Run</strong>
+                </label>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="back" type="button">Back</button>
+            <button class="approve" type="button">Approve Run</button>
+        </div>
+    </div>
+</body>
+</html>

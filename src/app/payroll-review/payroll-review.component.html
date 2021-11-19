@@ -1,0 +1,116 @@
+<div class="payrollReview">
+    <!-- top 4 buttons -->
+    <div class="topbuttons">
+        <button class="overview" type="button">Overview</button>
+        <button class="run" type="button" [routerLink]="['/payroll/run_payroll/payments']">Run Payroll</button>
+        <button class="advance" [routerLink]="['/advance/request']" type="button">Advance Request</button>
+        <button class="advance" type="button">Payroll Settings</button>
+    </div>
+    <!-- links after the buttons -->
+    <div class=" links">
+        <a routerLink="/payroll/run_payroll/new_run">New Run</a>
+        <a routerLink="/payroll/run_payroll/review" id="new">Review</a>
+        <a routerLink="/payroll/run_payroll/approve_run">Approve Run</a>
+        <a routerLink="/payroll/run_payroll/payments">Payments</a>
+    </div>
+    <div class=" row summary">
+        <div class="col-2">
+            <p id="type"><strong>Run Type:Payroll</strong></p>
+        </div>
+        <div class="col-2">
+            <p id="debit"><strong>Debit Date:{{name.created_at|date}}</strong></p>
+        </div>
+        <div class="col-2">
+            <p id="pay"><strong>Pay Date: 30/06/2021 </strong></p>
+        </div>
+        <div class="col-1">
+        </div>
+        <div class="col-1">
+        </div>
+        <div class="col-1">
+        </div>
+        <div class="col-1">
+            <button class="edit" type="button">Edit</button>
+        </div>
+        <div class="col-1">
+            <button class="confirm" type="button">Confirm</button>
+        </div>
+    </div>
+    <div class=" row summary shadow new">
+        <div class="col-2">
+            <p id="type"><strong>3 Employees Inlcuded</strong></p>
+        </div>
+        <div class="col-1">
+            <p id="debit"><strong>KES 60000.23</strong></p>
+        </div>
+        <div class="col-1">
+            <p id="pay"><strong>KES 12,000</strong></p>
+        </div>
+        <div class="col-2">
+            <p id="pay"><strong>KES 17,700</strong></p>
+        </div>
+        <div class="col-1">
+            <p id="pay"><strong>KES 12,910</strong></p>
+        </div>
+        <div class="col-1">
+        </div>
+        <div class="col-2 drop">
+            <p id="pay"><strong>Employee Type</strong></p>
+            <p id="select"><select class="form-select" aria-label="">
+                    <option selected hidden disabled></option>
+                    <option value="1">All</option>
+                    <option value="2">Type 1</option>
+                    <option value="3">Type 2</option>
+                </select></p>
+        </div>
+    </div>
+    <!-- table section -->
+    <div class="table">
+        <table class="table">
+            <thead>
+                <tr id="new">
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Hours</th>
+                    <th scope="col">Gross Pay</th>
+                    <th scope="col">Est. Deductions</th>
+                    <th scope="col">Commision & Overtime</th>
+                    <th scope="col">Estimated Net Pay</th>
+                    <th scope="col">Pay Method</th>
+                    <th scope="col">Pay Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="new" >{{name.name}}</td>
+                    <td>249 hrs</td>
+                    <td>{{name.amount}}</td>
+                    <td>KSH 12,000</td>
+                    <td>KSH 8,300</td>
+                    <td>KSH 10.0</td>
+                    <td >Direct deposit</td>
+                    <td>{{name.created_at|date}}</td>
+                </tr>
+                <tr>
+                    <td id="new">{{name2.name}}</td>
+                    <td>249hrs</td>
+                    <td>{{name2.amount}}</td>
+                    <td>KSH 0.0</td>
+                    <td>KSH 8,300</td>
+                    <td>KSH 8,300</td>
+                    <td >Direct deposit</td>
+                    <td>{{name2.created_at|date}}</td>
+                </tr>
+                <tr>
+                    <td id="new">{{name3.name}}</td>
+                    <td>249hrs</td>
+                    <td>{{name3.amount}}</td>
+                    <td>KSH 0.0</td>
+                    <td>KSH 1,100</td>
+                    <td>KSH 4,600</td>
+                    <td >Direct deposit</td>
+                    <td>{{name3.created_at|date}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

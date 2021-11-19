@@ -1,0 +1,87 @@
+<div class="payslips">
+    <!-- top 3 buttons -->
+    <div class="topbuttons">
+        <button class="overview" type="button">Overview</button>
+        <button class="run" type="button">Payslips</button>
+        <button class="advance" type="button">Year End</button>
+    </div>
+    <!-- payslip history -->
+    <div class="row history new">
+        <div class="shadow rounded">
+            <div class="col-3">
+                <p id="head"><strong>Payslip History</strong></p>
+            </div>
+            <div class="col-3 display">
+                <p id="head"><strong>Employee Type</strong></p>
+                <select class="form-select drops" aria-label="">
+                    <option selected hidden disabled></option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+            <div class="col-3 display">
+                <p id="head"><strong>Pay Month</strong></p>
+                <select class="form-select drops" aria-label="">
+                    <option selected hidden disabled></option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="1">April</option>
+                    <option value="2">May</option>
+                    <option value="3">June</option>
+                    <option value="1">July</option>
+                    <option value="2">August</option>
+                    <option value="3">September</option>
+                    <option value="1">October</option>
+                    <option value="2">November</option>
+                    <option value="3">December</option>
+                </select>
+            </div>
+            <div class="col-3 display">
+                <p id="head"><strong>Pay Year</strong></p>
+                <select class="form-select drops" aria-label="">
+                    <option selected hidden disabled></option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <!-- table section -->
+    <div class="table">
+        <table class="table">
+            <thead>
+                <tr id="new">
+                    <th scope="col">Full Name</th>
+                    <th scope="col">Gross Pay</th>
+                    <th scope="col">Net Pay</th>
+                    <th scope="col">Tax Deducted</th>
+                    <th scope="col">Insurance(NHIF)</th>
+                    <th scope="col">Pension(NSSF)</th>
+                    <th scope="col">Date Processed</th>
+                    <th scope="col">Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr  *ngFor='let staff of lststaff'>
+                    <td id="new">{{staff.full_name}}</td>
+                    <td>{{staff.gross_pay}}</td>
+                    <td>{{staff.net_pay}}</td>
+                    <td>{{staff.tax_deducted}}</td>
+                    <td>{{staff.insurance}}</td>
+                     <td>{{staff.pension}}</td>
+                    <td>{{staff.date_processed | date}}</td>
+                    <td><select class="form-select" aria-label="">
+                            <option selected hidden disabled>Action</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

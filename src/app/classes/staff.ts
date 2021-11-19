@@ -1,0 +1,24 @@
+export class Staff{
+    id:any;
+    full_name:any;
+    department:any;
+    position:any;
+    company:any;
+    work_email:any;
+    personal_email:any;
+    mobile_number:any;
+    employee_id:any;
+    location:any;
+    date_processed:any;
+    employment_date:any;
+    insurance_number:any;
+    tax_pin_number:any;
+    paye:any;
+    gross_pay:any;
+    net_pay:any;
+    tax_deducted:any;
+    insurance:any;
+    pension:any;
+    sacco:any;
+    medical_cover:any;
+}

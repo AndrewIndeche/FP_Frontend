@@ -1,0 +1,121 @@
+.body {
+  margin-top: 3%;
+  margin-left: 6%;
+  margin-right: 10%;
+  margin-bottom: 5.5%;
+  padding-left: -10%;
+  padding-right: 20%;
+  padding-bottom: 5%;
+  font-size: 17px;
+}
+
+button+button {
+  margin-left: 20px;
+}
+
+button {
+  width: 197px;
+  height: 37px;
+  color: #004763;
+  border-color: #004763;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border-radius: -2px;
+}
+
+#outline {
+  width: 150px;
+  height: 37px;
+  color: #004763;
+  border-color: #004763;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border-radius: -2px;
+}
+
+#current {
+  background-color: #004763;
+  color: #F1F1F0;
+}
+
+.wrapper {
+  padding-top: 4em;
+  color: #004763;
+  box-shadow: 5px 5px 8px gray;
+  padding-bottom: 1em;
+  margin-top: 3em;
+  padding-top: 1em;
+  padding-left: 1em;
+  width: 150%;
+}
+
+a+a {
+  margin-left: 40px;
+}
+
+a+b {
+  padding:10px;
+}
+
+#selectpaydropdown {
+  margin-left: 8em;
+  margin-top: -2em;
+}
+
+#processbtn {
+  margin-left: 16em;
+  margin-top: -2.3em;
+  background-color: #004763;
+  color: #F1F1F0;
+  display: block
+}
+
+#App-Button {
+  color: #004763;
+  border-color: #004763;
+  width: 90px;
+  padding: 5px;
+  font-size: 15px;
+  line-height: 1;
+  height: 40px;
+}
+
+b+a {
+  margin-left: 6em;
+}
+
+table {
+  margin-top: 3%;
+  margin-left: 15px;
+  font-size: 16px;
+}
+
+th {
+  column-gap: 10px;
+  justify-content: space-between;
+  color: #004763;
+}
+
+#name {
+  color: #004763;
+  background-color: #F1F1F0;
+}
+
+button:hover {
+  background: #004763;
+  color: #FFFFFF;
+}
+
+button:active {
+  background-color: #004763;
+}
+
+tbody {
+  height: 240px;
+  padding: 10px;
+}
+
+.container {
+  margin-top: 3rem;
+  margin-left: -1.5rem;
+}

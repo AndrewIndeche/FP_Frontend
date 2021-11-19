@@ -1,0 +1,85 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css"
+        integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css"
+        integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous" />
+</head>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-10">
+            <div class="body">
+              <button type="button" id="current" routerLink='/overview'>Overview</button>
+              <button type="button" routerLink='/staff/payslips'>Payslips</button>
+              <button type="button" routerLink='/p9-forms'>Year End</button>
+                <div class="wrapper">
+                    <span class="column"><img src="assets/img/avatar.png" alt="assets/img/avatar.png">
+                    </span>
+                    <span class="column">
+                        <p>Sheila Martins</p>
+                        <p>Information Technology Assistant</p>
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true">&nbsp;Nairobi,Kenya</i>
+                        <p>
+                        <p>Working Period:9 months</p>
+                    </span>
+                    <div class="col-3">
+                        <select class="form-select drops" id="dropdown" aria-label="">
+                            <option value="1">Actions</option>
+                            <option value="2">Delete User</option>
+                            <option value="3">Add details</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="card" id="card">
+                    <p>Payment Summary</p>
+                    <span class="column">
+                        <div class="col-14">
+                            <select class="form-select drops" id="selectpaydropdown" aria-label="">
+                                <option value="1">Select Payday</option>
+                                <option value="2">January</option>
+                                <option value="3">February</option>
+                                <option value="4">March</option>
+                                <option value="5">April</option>
+                                <option value="6">May</option>
+                                <option value="7">June</option>
+                                <option value="8">July</option>
+                                <option value="9">August</option>
+                                <option value="10">September</option>
+                                <option value="11">October</option>
+                                <option value="12">November</option>
+                                <option value="13">December</option>
+                            </select>
+                        </div>
+                        &nbsp;
+                        <button type="button" id="current">View Payslips</button>
+                    </span>
+                </div>
+                <div class="container">
+                    <button type="button" routerLink='/'>Overview</button>
+                    <button type="button" routerLink='/deductions'>Deductions</button>
+                    <button type="button" id="current" routerLink='/benefit'>Benefits</button>
+                </div>
+                <div class="wrapper" id="wrapper">
+                    <a>Benefits</a>
+                    <b><i class="fa fa-pencil" id="font awesome" aria-hidden="true"></i></b>&nbsp;&nbsp;&nbsp;
+                    <b><i class="fas fa-plus" id="font awesome" aria-hidden="true"></i></b>
+                </div>
+                <table style="width:60%" id="table-left">
+                    <tbody>
+                        <tr>
+                            <td id="name">Benefit Type</td>
+                            <td>Rate</td>
+                        </tr>
+                        <tr>
+                            <td id="name">Medical Cover</td>
+                            <td>KES 600 (Per Month)</td>
+                        </tr>
+                        <tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>

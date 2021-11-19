@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Payroll Overview</title>
+</head>
+
+<body>
+    <br>
+    <div class="container">
+        <div class="btns">
+            <button>Overview</button>
+            <button style="margin:7px;" [routerLink]="['/payroll/run_payroll/new_run']">Run Payroll</button>
+            <a routerLink="/approve"><button id="ad">Advance Request</button></a>
+        </div>
+        <br>
+
+        <br>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="card-title" style="background-color: #004763;">
+                                    <h2 style="color: white;">Start</h2>
+                                </div>
+                                <div class="card-text">
+                                    <p class="text-centre">Mon, Jun</p>
+                                    <p class="text-centre">3</p>
+                                    <p class="text-centre">2021</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="card-title" style="background-color: #004763;">
+                                    <h2 style="color: white;">End</h2>
+                                </div>
+                                <div class="card-text">
+                                    <p class="text-centre">Thur, Jun</p>
+                                    <p class="text-centre">29</p>
+                                    <p class="text-centre">2021</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="card">
+                            <div class="card-block">
+                                <div class="card-title" style="background-color: #004763;">
+                                    <h2 style="color: white;">Pay </h2>
+                                </div>
+                                <div class="card-text">
+                                    <p class="text-centre">Mon, Jun</p>
+                                    <p class="text-centre">30</p>
+                                    <p class="text-centre">2021</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <p>Total Payroll Amount</p>
+                        <p style="font-weight: bold;">KES 1,478,600.59</p>
+                    </div>
+                    <div class="col-md-2">
+                        <button style="background-color: #004763;color: white;">Review Payroll</button>
+                        <p class="text-centre">or</p>
+                        <button style="background-color: #004763;color: white;">Create New Run</button>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="card">
+                    <p>My Quick Checklist.</p>
+                    <br>
+                    <p style="color: #004763;">Tax Information</p>
+                    <div class="setup">
+                        <p>Set up or manage company Tax Information.</p>
+                        <button style="background-color: #004763;color: white; margin-left: 38%;">Manage</button>
+                    </div>
+                    <br>
+                    <p style="color: #004763;">Company Information</p>
+                    <div class="setup">
+                        <p>Add or update company contact and legal Information.</p>
+                        <button style="background-color: #004763;color: white; margin-left: 31%;">Manage</button>
+                    </div>
+                    <br>
+                    <p style="color: #004763;">Configure Payment Method</p>
+                    <div class="setup">
+                        <p>Link Bank or Mpesa for Direct Deposits.</p>
+                        <button style="background-color: #004763;color: white; margin-left: 41%;">Manage</button>
+                    </div>
+                    <br>
+                    <p style="color: #004763;">Configure Benefits and Deductions</p>
+                    <div class="setup">
+                        <p>Add employees benefits and deductions.</p>
+                        <button style="background-color: #004763;color: white; margin-left: 40%;">Manage</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <full-calendar [options]="calendarOptions"></full-calendar>
+            </div>
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<div class="payments">
+    <!-- top 3 buttons -->
+    <div class="topbuttons">
+        <button class="overview" type="button" routerLink="/payoverview">Overview</button>
+        <button class="run" type="button" [routerLink]="['/payroll/run_payroll/payments']">Run Payroll</button>
+        <button class="advance" type="button" routerLink='/advance/request'>Advance Request</button>
+    </div>
+    <!-- links after the buttons -->
+    <div class=" links">
+        <a routerLink="/payroll/run_payroll/new_run">New Run</a>
+        <a routerLink="/payroll/run_payroll/review">Review</a>
+        <a routerLink="/payroll/run_payroll/approve_run">Approve Run</a>
+        <a routerLink="/payroll/run_payroll/payments" id="new">Payments</a>
+    </div>
+    <!-- table section -->
+    <div class="table">
+        <table class="table">
+            <thead>
+                <tr id="new">
+                    <th scope="col">Pay ID</th>
+                    <th scope="col">Month</th>
+                    <th scope="col">Gross Pay</th>
+                    <th scope="col">Net Pay</th>
+                    <th scope="col">Total Staff</th>
+                    <th scope="col"> Status</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>PAY 11/2021</td>
+                    <td>December</td>
+                    <td>KSH 1,450,000</td>
+                    <td>KSH 1,328,000</td>
+                    <td>13</td>
+                    <td>Pending</td>
+                    <td><button id="action">Send Payments</button></td>
+                </tr>
+                <tr>
+                    <td>PAY 12/2021</td>
+                    <td>December</td>
+                    <td>KSH 1,450,000</td>
+                    <td>KSH 1,328,000</td>
+                    <td>13</td>
+                    <td>Pending</td>
+                    <td><button id="action">Send Payments</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

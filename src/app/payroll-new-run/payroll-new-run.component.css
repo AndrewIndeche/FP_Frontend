@@ -1,0 +1,132 @@
+.topbuttons {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.overview {
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: white;
+  border: #004763 2px solid;
+  color: #004763;
+  border-radius: 2px;
+}
+
+.run {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 15px;
+  background-color: #004763;
+  border: #004763 2px solid;
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+.advance {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 15px;
+  background-color: white;
+  border: #004763 2px solid;
+  color: #004763;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: #004763;
+  color: white
+}
+
+/* links styles */
+.links {
+  border: 2px solid #004763;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#new,
+.new {
+  color: #004763
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+}
+
+.links a:active {
+  text-decoration: none;
+  color: #004763;
+}
+
+/* forms styles */
+.forms {
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.dropdowns {
+  border: 2px solid #004763
+}
+
+.proceed {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  background-color: #004763;
+  border: #004763 2px solid;
+  color: white;
+  border-radius: 2px;
+}
+
+.history,
+.shadow {
+  display: flex;
+  padding-left: 20px;
+  width: 100%;
+}
+
+/* payroll history section */
+#circled {
+  border: 2px solid;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-left: 20px;
+  margin-left: 1%;
+}
+
+.table {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.display {
+  display: flex;
+}
+
+#head {
+  color: #004763;
+}
+
+.drop{
+  display: flex;
+  margin-top:1%
+}
+
+.drops {
+  margin-bottom: 10%;
+  border: 2px solid #004763;
+  margin-left: 1%;
+}
+
+#head {
+  margin-top: 5%
+}
+
+.freq, .pad{
+  margin-top:2%
+}

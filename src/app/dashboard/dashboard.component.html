@@ -1,0 +1,84 @@
+<div class="pt-5 ps-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-8 ">
+                <div class="ms-5 ">
+                    <h2>Good Morning, Derick.</h2><br>
+
+                    <h4>Quick Navigation</h4><br>
+                </div>
+
+                <!--accordion  -->
+                <div class=" quick-navigation ms-5">
+                    <div class="accordion-heading pb-2" id="f1" (click)="accordion('f1')">
+                        <span>
+                            Start preparing for your next payday. It's easy, fast and compliant
+                        </span>
+                        <span class="pull-right up-icon" [class.icon]="id==='f1'">
+                            <img src="https://img.icons8.com/ios-glyphs/20/000000/expand-arrow--v1.png" />
+                        </span> <br>
+                    </div>
+                    <div class="accordion-content" *ngIf="id==='f1'">
+                        Moringa School is a multi-disciplinary learning accelerator committed to closing the skills gap
+                        in Africa’s job market by providing transformative tech-based learning that enables graduates to
+                        compete in the global digital economy.
+                    </div>
+
+                    <div class="pb-3">
+                        <button class=" mt-4 run-payroll-btn" [routerLink]="['/payroll/run_payroll/new_run']">Run payroll</button>
+                    </div>
+
+                </div><br>
+
+                <!--  -->
+
+                <div class=" quick-navigation ms-5 p-">
+                    <span class="approval">You have pending Salary Advance requests awaiting approval</span>
+
+                    <span class="ms-5">
+                        <button class="run-payroll-btn-three ms-5">Approve</button>
+                    </span>
+
+
+                </div><br>
+
+                <div class=" quick-navigation ms-5">
+                    <span class="approval">You have 13 expenses awaiting to be approved </span>
+                    <span class="ms-5">
+                        <span class="ms-5 ps-2">
+                            <span class="ms-5">
+                                <button class="run-payroll-btn-three ms-5">Approve</button>
+                            </span>
+                        </span>
+
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div class="col-4 ps-5 pt-5 mt-5 ">
+                <h5 class="pb-4 ps-5 ms-4 important-dates-h">Important Dates</h5>
+                <div class="p-3 important-dates">
+                    <!--  -->
+                    <ul>
+                        <li>
+                            <h6>1st May 2021</h6> <br>
+                            <p>Holiday All day celebration</p>
+                        </li>
+                        <li>
+                            <h6>1st May 2021</h6> <br>
+                            <p>Holiday All day celebration</p>
+
+                        </li>
+                        <li>
+                            <h6>1st May 2021</h6> <br>
+                            <p>Holiday All day celebration</p>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

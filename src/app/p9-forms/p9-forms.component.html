@@ -1,0 +1,222 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-10">
+            <div class="body">
+                <button type="button" routerLink='/overview'>Overview</button>
+                <button type="button" routerLink='/staff/payslips'>Payslips</button>
+                <button type="button" id="current" routerLink='/p9-forms'>Year End</button>
+                <div class="container">
+                    <a>Select Tax Year</a>
+                    <div class="col-2">
+                        <select class="form-select drops" id="selectpaydropdown" aria-label="">
+                            <option value="1">2020</option>
+                            <option value="2">2019</option>
+                            <option value="3">2018</option>
+                            <option value="4">2017</option>
+                            <option value="5">2016</option>
+                            <option value="6">2015</option>
+                            <option value="7">2014</option>
+                            <option value="8">2013</option>
+                            <option value="9">2012</option>
+                            <option value="10">2011</option>
+                            <option value="11">2010</option>
+                            <option value="12">2009</option>
+                            <option value="13">2008</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="button" id="processbtn">Process Forms</button>
+                <div class="wrapper" id="wrapper">
+                    <b>Payslip History</b>
+                    <a style="margin-left:25em;">Employee Type
+                        <button type="button" id="inline">All</button></a>
+                    <a>Tax Year
+                        <select class="form-select drops" style="margin-left:62em;margin-top:-2em" id="outline"
+                            aria-label="">
+                            <option value="1">2020</option>
+                            <option value="2">2019</option>
+                            <option value="3">2018</option>
+                            <option value="4">2017</option>
+                            <option value="5">2016</option>
+                            <option value="6">2015</option>
+                            <option value="7">2014</option>
+                            <option value="8">2013</option>
+                            <option value="9">2012</option>
+                            <option value="10">2011</option>
+                            <option value="11">2010</option>
+                            <option value="12">2009</option>
+                            <option value="13">2008</option>
+                        </select></a>
+                </div>
+                <table style="width:150%">
+                    <thead>
+                        <th>Full Name</th>
+                        <th>Gross Pay</th>
+                        <th>Net Pay</th>
+                        <th>Tax Deducted</th>
+                        <th>Insurance (NHIF)</th>
+                        <th>Pension (NSSF)</th>
+                        <th>Date Processed</th>
+                        <th>Status</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="name">James Wanyama</td>
+                            <td id="name">KES 103,000</td>
+                            <td id="name">KES 103,000</td>
+                            <td id="name">KES 103,000</td>
+                            <td id="name">KES 103,000</td>
+                            <td id="name">KES 103,000</td>
+                            <td id="name">14/05/2021</td>
+                            <a class><select class="form-select drops" id="App-Button" aria-label="">
+                                    <option value="1">Actions</option>
+                                    <option value="2">Delete User</option>
+                                    <option value="3">Add User-details</option>
+                                </select></a>
+                        </tr>
+                        <tr>
+                            <td>Grace Wandiri</td>
+                            <td>KES 98,000</td>
+                            <td>KES 98,000</td>
+                            <td>KES 98,000</td>
+                            <td>KES 98,000</td>
+                            <td>KES 98,000</td>
+                            <td>14/05/2021</td>
+                            <a><select class="form-select drops" id="App-Button" aria-label="">
+                                    <option value="1">Actions</option>
+                                    <option value="2">Delete User</option>
+                                    <option value="3">Add User-details</option>
+                                </select></a>
+                        </tr>
+                        <tr>
+                            <td id="name">Anderson Karani</td>
+                            <td id="name">KES 98,000</td>
+                            <td id="name">KES 98,000</td>
+                            <td id="name">KES 98,000</td>
+                            <td id="name">KES 98,000</td>
+                            <td id="name">KES 98,000</td>
+                            <td id="name">14/05/2021</td>
+                            <a><select class="form-select drops" id="App-Button" aria-label="">
+                                    <option value="1">Actions</option>
+                                    <option value="2">Delete User</option>
+                                    <option value="3">Add User-details</option>
+                                </select></a>
+                        </tr>
+                        <tr>
+                            <td>Abdallah Hass</td>
+                            <td>KES 98,000</td>
+                            <td>KES 98,000</td>
+                            <td>KES 98,000</td>
+                            <td>KES 98,000</td>
+                            <td>KES 98,000</td>
+                            <td>14/05/2021</td>
+                            <a><select class="form-select drops" id="App-Button" aria-label="">
+                                    <option value="1">Actions</option>
+                                    <option value="2">Delete User</option>
+                                    <option value="3">Add User-details</option>
+                                </select></a>
+                        </tr>
+                        <tr>
+                            <td id="name">Mercy Andrews</td>
+                            <td id="name">KES 45,000</td>
+                            <td id="name">KES 45,000</td>
+                            <td id="name">KES 45,000</td>
+                            <td id="name">KES 45,000</td>
+                            <td id="name">KES 45,000</td>
+                            <td id="name">14/05/2021</td>
+                            <a><select class="form-select drops" id="App-Button" aria-label="">
+                                    <option value="1">Actions</option>
+                                    <option value="2">Delete User</option>
+                                    <option value="3">Add User-details</option>
+                                </select></a>
+                        </tr>
+                        <tr>
+                            <td>Sheila Martins</td>
+                            <td>KES 30,000</td>
+                            <td>KES 30,000</td>
+                            <td>KES 30,000</td>
+                            <td>KES 30,000</td>
+                            <td>KES 30,000</td>
+                            <td>14/05/2021</td>
+                            <a><select class="form-select drops" id="App-Button" aria-label="">
+                                    <option value="1">Actions</option>
+                                    <option value="2">Delete User</option>
+                                    <option value="3">Add User-details</option>
+                                </select></a>
+                        </tr>
+                        <tr>
+                            <td id="name">Sharon Musyoka</td>
+                            <td id="name">KES 45,000</td>
+                            <td id="name">KES 45,000</td>
+                            <td id="name">KES 45,000</td>
+                            <td id="name">KES 45,000</td>
+                            <td id="name">KES 45,000</td>
+                            <td id="name">14/05/2021</td>
+                            <a><select class="form-select drops" id="App-Button" aria-label="">
+                                    <option value="1">Actions</option>
+                                    <option value="2">Delete User</option>
+                                    <option value="3">Add User-details</option>
+                                </select></a>
+                        </tr>
+                        <tr>
+                            <td>Martin Mwenda</td>
+                            <td>KES 58,000</td>
+                            <td>KES 58,000</td>
+                            <td>KES 58,000</td>
+                            <td>KES 58,000</td>
+                            <td>KES 58,000</td>
+                            <td>14/05/2021</td>
+                            <a><select class="form-select drops" id="App-Button" aria-label="">
+                                    <option value="1">Actions</option>
+                                    <option value="2">Delete User</option>
+                                    <option value="3">Add User-details</option>
+                                </select></a>
+                        </tr>
+                        <tr>
+                            <td id="name">Oscar Odhiambo</td>
+                            <td id="name">KES 63,000</td>
+                            <td id="name">KES 63,000</td>
+                            <td id="name">KES 63,000</td>
+                            <td id="name">KES 63,000</td>
+                            <td id="name">KES 63,000</td>
+                            <td id="name">14/05/2021</td>
+                            <a><select class="form-select drops" id="App-Button" aria-label="">
+                                    <option value="1">Actions</option>
+                                    <option value="2">Delete User</option>
+                                    <option value="3">Add User-details</option>
+                                </select></a>
+                        </tr>
+                        <tr>
+                            <td>Ann Wanjiku</td>
+                            <td>KES 45,000</td>
+                            <td>KES 45,000</td>
+                            <td>KES 45,000</td>
+                            <td>KES 45,000</td>
+                            <td>KES 45,000</td>
+                            <td>14/05/2021</td>
+                            <a><select class="form-select drops" id="App-Button" aria-label="">
+                                    <option value="1">Actions</option>
+                                    <option value="2">Delete User</option>
+                                    <option value="3">Add User-details</option>
+                                </select></a>
+                        </tr>
+                        <tr>
+                            <td id="name">Oliver James</td>
+                            <td id="name">KES 58,000</td>
+                            <td id="name">KES 58,000</td>
+                            <td id="name">KES 58,000</td>
+                            <td id="name">KES 58,000</td>
+                            <td id="name">KES 58,000</td>
+                            <td id="name">14/05/2021</td>
+                            <a><select class="form-select drops" id="App-Button" aria-label="">
+                                    <option value="1">Actions</option>
+                                    <option value="2">Delete User</option>
+                                    <option value="3">Add User-details</option>
+                                </select></a>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
