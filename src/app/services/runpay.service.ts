@@ -23,4 +23,7 @@ export class RunpayService {
   getStaff1() {
     return this.http.get(this.url2 + 'staff/1/');
   }
+  getExp1() {
+    return this.http.get(this.url2 + 'staff/2/');
+  }
 }
