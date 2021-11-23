@@ -57,9 +57,20 @@
                 <p id="head"><strong>Year</strong></p>
                 <select class="form-select drops" aria-label="">
                     <option selected hidden disabled></option>
-                    <option value="1">Option 1</option>
-                    <option value="2">Option 2</option>
-                    <option value="3">Option 3</option>
+                    <option value="1">2021</option>
+                    <option value="1">2020</option>
+                    <option value="2">2019</option>
+                    <option value="3">2018</option>
+                    <option value="4">2017</option>
+                    <option value="5">2016</option>
+                    <option value="6">2015</option>
+                    <option value="7">2014</option>
+                    <option value="8">2013</option>
+                    <option value="9">2012</option>
+                    <option value="10">2011</option>
+                    <option value="11">2010</option>
+                    <option value="12">2009</option>
+                    <option value="13">2008</option>
                 </select>
             </div>
 
@@ -84,7 +95,7 @@
 
                 <div class="col-3 text-center">
 
-                    <p>{{ ( (payrolls.length ) - (payrolls.length) ) * 100 }}%</p>
+                    <p>{{ (( (payrolls.length ) - 2 ) * 3) / 100 }}%</p>
 
                     <p>Change</p>
 
@@ -98,7 +109,7 @@
 
                 <div class="col-3">
 
-                    <p>KES. {{ (payrolls.length) * 350000 }}</p>
+                    <p>KES. {{ 2 * 350000 }}</p>
 
                     <p>Previous</p>
 
@@ -117,13 +128,13 @@
 
             <p class="text-center color"><strong>Total Staff on Payroll</strong></p>
 
-            <p class="text-center color"><strong>{{payrolls.length}}</strong></p>
+            <p class="text-center color"><strong>{{staffs.length}}</strong></p>
 
             <div class="row amazing">
 
                 <div class="col-3 text-center">
 
-                    <p>{{ ( (payrolls.length ) - (payrolls.length) ) * 100 }}%</p>
+                    <p>{{ (( (staffs.length ) - 3 ) * 3) / 100 }}%</p>
 
                     <p>Change</p>
 
@@ -161,7 +172,7 @@
 
                 <div class="col-3 text-center">
 
-                    <p>{{ ( (payrolls.length ) - (payrolls.length) ) * 100 }}%</p>
+                    <p>{{ (( (payrolls.length ) - 2 ) * 3) / 100 }}%</p>
 
                     <p>Change</p>
 
@@ -175,7 +186,7 @@
 
                 <div class="col-3">
 
-                    <p>KES. {{ (payrolls.length) * 50000 }}</p>
+                    <p>KES. {{ 2* 50000 }}</p>
 
                     <p>Previous</p>
 
