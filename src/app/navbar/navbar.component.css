@@ -142,3 +142,12 @@ button{
 
 
 }
+.chevron:hover{
+  cursor: pointer;
+  color: #004763;
+  transition: 0.2s;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+
+}
