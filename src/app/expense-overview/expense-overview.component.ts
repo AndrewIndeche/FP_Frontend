@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { RunpayService } from '../services/runpay.service';
-
 @Component({
   selector: 'app-expense-overview',
   templateUrl: './expense-overview.component.html',
@@ -21,4 +20,4 @@ export class ExpenseOverviewComponent implements OnInit {
     this.getExp1()
   }
 
-}
+ }

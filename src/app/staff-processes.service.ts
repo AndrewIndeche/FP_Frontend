@@ -7,6 +7,7 @@ import { HttpClient } from '@angular/common/http';
 export class StaffProcessService {
   staff_url = "https://financegrp.herokuapp.com/employee/"
   process!:Processes;
+  
   getdetails(){
     return this.http.get(this.staff_url);
   }

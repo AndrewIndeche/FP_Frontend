@@ -2,7 +2,7 @@
   margin-top: 3%;
   margin-left: 6%;
   margin-right: 8%;
-  margin-bottom: 5.5%;
+  margin-bottom: 1%;
   padding-left: -12%;
   padding-right: 20%;
   padding-bottom: 5%;
@@ -29,12 +29,11 @@ button {
 
 .wrapper {
   box-shadow: 3px 3px 6px gray;
-  padding-bottom: 1em;
   margin-top: 3em;
   padding-top: 1em;
   padding-left: 1em;
   padding-top: 3em;
-  padding-bottom: 14em;
+  padding-bottom: 10em;
   padding-right: 10em;
   margin-right: 1em;
 }
@@ -85,8 +84,8 @@ span+span {
 
 #wrapper {
   padding-top: 14px;
-  padding-bottom: 10px;
-  margin-right: 12em;
+  padding-bottom:0em;
+  margin-right: 10em;
   color: #004763;
   white-space: nowrap;
 }
