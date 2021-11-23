@@ -1,5 +1,7 @@
 .payslips{
-    width: 100%;
+    width: 90%;
+    padding-top: 2em;
+    padding-left:4em;
 }
 
 .topbuttons {
@@ -8,8 +10,10 @@
 }
 
 .overview {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 60px;
+  padding-right: 50px;
+  padding-top:2px;
+  padding-bottom:10px;
   background-color: white;
   border: #004763 2px solid;
   color: #004763;
@@ -17,8 +21,10 @@
 }
 
 .run {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top:3px;
+  padding-bottom:10px;
   margin-left: 15px;
   background-color: #004763;
   border: #004763 2px solid;
@@ -27,8 +33,9 @@
 }
 
 .advance {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 60px;
+  padding-right: 70px;
+  padding-bottom:10px;
   margin-left: 15px;
   background-color: white;
   border: #004763 2px solid;
