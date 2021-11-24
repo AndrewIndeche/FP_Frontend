@@ -78,13 +78,13 @@
 
             <p class="text-center color"><strong>Total Expenses Reimbursed</strong></p>
 
-            <p class="text-center color"><strong>1.26M</strong></p>
+            <p class="text-center color"><strong>{{(expenses.length) * 75000 }}</strong></p>
 
             <div class="row amazing">
 
                 <div class="col-3 text-center">
 
-                    <p>44 %</p>
+                    <p>{{ (( (expenses.length ) - 1 ) * 1) / 100 }}%</p>
 
                     <p>Change</p>
 
@@ -98,7 +98,7 @@
 
                 <div class="col-3">
 
-                    <p>0.6M</p>
+                    <p>KES. 75000</p>
 
                     <p>Previous</p>
 
@@ -117,13 +117,13 @@
 
             <p class="text-center color"><strong>Total Expenses Approved</strong></p>
 
-            <p class="text-center color"><strong>508</strong></p>
+            <p class="text-center color"><strong>{{expenses.length}}</strong></p>
 
             <div class="row amazing">
 
                 <div class="col-3 text-center">
 
-                    <p>63%</p>
+                    <p>{{ (( (expenses.length ) - 1 ) * 1) / 100 }}%</p>
 
                     <p>Change</p>
 
@@ -137,7 +137,7 @@
 
                 <div class="col-3">
 
-                    <p>213</p>
+                    <p>1</p>
 
                     <p>Previous</p>
 
