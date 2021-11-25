@@ -5,7 +5,7 @@ import { Payroll } from './payroll-class/payroll';
   providedIn: 'root'
 })
 export class PayrollService {
-  payroll_url = "https://financegrp.herokuapp.com/payroll/"
+  payroll_url = "https://machachari.herokuapp.com/finance/api/payw/"
   payrolls!: Payroll;
   getdetails() {
     return this.http.get(this.payroll_url);

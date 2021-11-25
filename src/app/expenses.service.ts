@@ -7,7 +7,7 @@ import { Expenses } from './expenses';
 })
 export class ExpensesService {
 
-  expenses_url = "https://financegrp.herokuapp.com/expenses/"
+  expenses_url = "https://machachari.herokuapp.com/finance/api/expensesw/"
 
   expenses!: Expenses;
 
