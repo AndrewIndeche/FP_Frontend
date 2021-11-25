@@ -12,7 +12,7 @@ export class AdvanceRequestComponent implements OnInit {
   staff3:any
   constructor(private nameser:RunpayService) { }
   getStaff() {
-    this.nameser.getStaff1().subscribe((data: any) => {
+    this.nameser.getAdvanceRe().subscribe((data: any) => {
       this.staff = data;
       console.log(this.staff);
     });
