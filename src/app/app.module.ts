@@ -37,6 +37,8 @@ import { OverviewComponent } from './overview/overview.component';
 import { P9FormsComponent } from './p9-forms/p9-forms.component';
 import { SingleUserComponent } from './single-user/single-user.component';
 import { HttpClientModule } from '@angular/common/http';
+import {Ng2SearchPipeModule} from 'ng2-search-filter';
+import { LoginComponent } from './login/login.component';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -71,7 +73,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     DeductionsComponent,
     OverviewComponent,
     P9FormsComponent,
-    SingleUserComponent
+    SingleUserComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -81,6 +84,7 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     FormsModule,
     FullCalendarModule, // register FullCalendar with you app
     HttpClientModule,
+    Ng2SearchPipeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
