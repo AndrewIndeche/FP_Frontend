@@ -107,7 +107,7 @@ a {
   padding-top: 55px;
   margin-left: -244px;
   width: 297px;
-  /* text-align: center; */
+   text-align: center; 
   height: 100px;
   color: #004763;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
@@ -150,4 +150,27 @@ button{
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
 
+}
+/* .chevron:active{
+  cursor: pointer;
+  color: #004763;
+  transition: 0.2s;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+
+} */
+.calender{
+  display: none;
+}
+.calender1:hover .calender{
+  display: block;
+  position: absolute;
+  background: red;
+  /* margin-top: 4px; */
+  margin-left: -280px;
+  width: 30%;
+  height: 130%;
+  /* color: #004763; */
+  /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); */
 }
