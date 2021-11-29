@@ -50,7 +50,7 @@
         <br>
         <div class="row shadow">
             <div class="col-3 expense-type">
-                <p>Expense Type</p>
+                <p>Type</p>
                 <select id="All">
                     <option value="type1">Expense1</option>
                     <option value="type2">Expense2</option>
@@ -115,48 +115,47 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr *ngFor = 'let exp of allExpense'>
                         <td>R238SN58</td>
-                        <tr>
-                        <td id="new">James Wanyama</td>
-                        <td>KEFFRA SHIPPING LIMITED</td>
-                        <td>12/02/2021</td>
-                        <td>KES 3000</td>
-                        <td id=approve>Approved</td>
+                        <td id="new">{{exp.name}}</td>
+                        <td>{{exp.merchant}}</td>
+                        <td>{{exp.date_processed | date}}</td>
+                        <td>KES   {{exp.amount}}</td>
+                        <td id=approve>{{exp.status}}</td>
 
                     </tr>
 
-                        <tr>
+                        <!-- <tr>
                         <td>R238SN58</td>
-                        <td id="new">Luke Karanja</td>
+                        <td id="new">{{expenseTwo.name}}</td>
                         <td>Jambojet</td>
                         <td>12/02/2021</td>
-                        <td>KES 40,000</td>
+                        <td>{{expenseTwo.amount}}</td>
                         <td id="approve">Approved</td>
 
                     </tr>
                     <tr>
                         <td>R238SN58</td>
-                        <td id="new">Anderson Karani</td>
+                        <td id="new">{{expenseThree.name}}</td>
                         <td>KEFFRA SHIPPING LIMITED</td>
                         <td>12/02/2021</td>
-                        <td>KES 3,400</td>
+                        <td>{{expenseThree.amount}}</td>
                         <td id="approve">Approved</td>
                     </tr>
                     <tr>
                         <td>R238SN58</td>
-                        <td id="new">Abdallah Hassan</td>
+                        <td id="new">{{expenseFour.name}}</td>
                         <td>KEFFRA SHIPPING LIMITED</td>
                         <td>12/02/2021</td>
-                        <td>KES 45,000</td>
+                        <td>{{expenseFour.amount}}</td>
                         <td id="approve">Approved</td>
                     </tr>
                     <tr>
                         <td>R238SN58</td>
-                        <td id="new">Mercy Andrews</td>
+                        <td id="new">{{expenseFive.name}}</td>
                         <td>Amazon Prime</td>
                         <td>12/02/2021</td>
-                        <td>KES 120,000</td>
+                        <td>{{expenseFive.amount}}</td>
                         <td id="reject">Rejected</td>
                     </tr>
                     <tr>
@@ -199,7 +198,7 @@
                         <td>12/02/2021</td>
                         <td>KES 300</td>
                         <td id="approve">Approved</td>
-                    </tr>
+                    </tr> -->
                 </tbody>
             </table>
         </div>

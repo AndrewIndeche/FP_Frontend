@@ -1,5 +1,5 @@
 .container {
-  margin-left: 50px;
+  margin-left: 0px;
 }
 
 .approvals {
@@ -61,7 +61,7 @@
 }
 
 .expense-table {
-  border: 2px solid #004763;
+  /* border: 2px solid #004763; */
   margin-left: 1%;
   margin-right: 1%;
 }
@@ -85,7 +85,7 @@
 #All {
   padding-left: 40px;
   padding-right: 40px;
-  height: 20px;
+  /* height: 20px; */
   margin-left: 15px;
   background-color: white;
   border: #004763 2px solid;
@@ -115,7 +115,7 @@
 
 table {
 
-  height: 500px;
+  /* height: 500px; */
   overflow-y: scroll;
 }
 

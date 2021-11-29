@@ -25,7 +25,7 @@
                 <option value="reject">Reject Selected</option>
 
             </select>
-            <h3 style="padding-left: 10px; color:#004763;"><strong>KES 1,478,600</strong></h3>
+            <p style="padding-left: 50px; color:#004763;"><strong>KES 1,478,600</strong></p>
 
         </div>
 
@@ -44,15 +44,27 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td><input type="radio" id="one" name="" value="" checked></td>
+
+                    <tr *ngFor = 'let approve of approveAll'>
+                        <td><input type="radio" id="one" name="" value=""></td>
                         <td>R238SN58</td>
-                        <td id="name">James Wanyama</td>
-                        <td>KES 3,000</td>
+                        <td id="name">{{approve.name}}</td>
+                        <td> KES  {{approve.amount}}</td>
+                        <td>{{approve.merchant}}</td>
+                        <td>{{approve.date_processed|date}}</td>
+
+                    </tr>
+
+                    
+                    <!-- <tr>
+                        <td><input type="radio" id="one" name="" value="" ></td>
+                        <td>R238SN58</td>
+                        <td id="name">{{expenseA.name}}</td>
+                        <td>{{expenseA.amount}}</td>
                         <td>KEFFRA SHIPPING LIMITED</td>
                         <td>12/02/2021</td>
                     </tr>
-                    <td><input type="radio" id="one" name="" value="" checked></td>
+                    <td><input type="radio" id="one" name="" value="" ></td>
                     <td>R238SN58</td>
                     <td id="name">Grace Wandiri</td>
                     <td>KES 4,000</td>
@@ -76,7 +88,7 @@
                         <td>12/02/2021</td>
                     </tr>
                     <tr>
-                        <td><input type="radio" id="one" name="" value="" checked></td>
+                        <td><input type="radio" id="one" name="" value="" ></td>
                         <td>R238SN58</td>
                         <td id="name">Mercy Andrews</td>
                         <td>KES 120,000</td>
@@ -92,38 +104,30 @@
                         <td>12/02/2021</td>
                     </tr>
                     <tr>
-                        <td><input type="radio" id="one" name="" value="" checked></td>
+                        <td><input type="radio" id="one" name="" value="" ></td>
                         <td>R238SN58</td>
                         <td id="name">Grace Wandiri</td>
                         <td>KES 40,000</td>
                         <td>Jambojet</td>
                         <td>12/02/2021</td>
-                    </tr>
-                    <tr>
+                    </tr> -->
+                   
+                    <!-- <tr>
                         <td><input type="radio" id="one" name="" value=""></td>
                         <td>R238SN58</td>
-                        <td id="name">James Wanyama</td>
-                        <td>KES 3,000</td>
-                        <td>KEFFRA SHIPPING LIMITED</td>
-                        <td>12/02/2021</td>
-
-                    </tr>
-                    <tr>
-                        <td><input type="radio" id="one" name="" value=""></td>
-                        <td>R238SN58</td>
-                        <td id="name">Anderson Karani</td>
-                        <td>KES 3,400</td>
+                        <td id="name">{{expenseA.name}}</td>
+                        <td>{{expenseA.amount}}</td>
                         <td>KEFFRA SHIPPING LIMITED</td>
                         <td>12/02/2021</td>
                     </tr>
                     <tr>
-                        <td><input type="radio" id="one" name="" value="" checked></td>
+                        <td><input type="radio" id="one" name="" value=""></td>
                         <td>R238SN58</td>
                         <td id="name">Grace Wandiri</td>
                         <td>KES 40,000</td>
                         <td>Jambojet</td>
                         <td>12/02/2021</td>
-                    </tr>
+                    </tr> -->
 
 
                 </tbody>
@@ -131,6 +135,62 @@
         </div>
     </div>
 </div>
+
+    <!-- <script>
+
+
+        $(document).ready(function() {
+
+            $(function() {
+                var allRadios = $('input[type=radio]')
+                var radioChecked;
+        
+                var setCurrent =
+                    function(e) {
+                        var obj = e.target;
+        
+                        radioChecked = $(obj).attr('checked');
+                    }
+        
+                var setCheck =
+                    function(e) {
+        
+                        if (e.type == 'keypress' && e.charCode != 32) {
+                            return false;
+                        }
+        
+                        var obj = e.target;
+        
+                        if (radioChecked) {
+                            $(obj).attr('checked', false);
+                        } else {
+                            $(obj).attr('checked', true);
+                        }
+                    }
+        
+                $.each(allRadios, function(i, val) {
+                    var label = $('label[for=' + $(this).attr("id") + ']');
+        
+                    $(this).bind('mousedown keydown', function(e) {
+                        setCurrent(e);
+                    });
+        
+                    label.bind('mousedown keydown', function(e) {
+                        e.target = $('#' + $(this).attr("for"));
+                        setCurrent(e);
+                    });
+        
+                    $(this).bind('click', function(e) {
+                        setCheck(e);
+                    });
+        
+                });
+        
+            });
+        });
+
+    </script> -->
+
 
 
 
