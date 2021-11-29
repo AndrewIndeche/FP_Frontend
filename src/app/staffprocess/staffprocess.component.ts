@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Processes } from '../staff-processes/processes';
 import{StaffProcessService} from '../staff-processes.service'
 // import * as jquery from 'jquery';
 // import { CalendarOptions } from '@fullcalendar/angular'; // useful for typechecking
