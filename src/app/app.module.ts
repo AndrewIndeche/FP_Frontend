@@ -39,6 +39,8 @@ import { SingleUserComponent } from './single-user/single-user.component';
 import { HttpClientModule } from '@angular/common/http';
 import {Ng2SearchPipeModule} from 'ng2-search-filter';
 import { LoginComponent } from './login/login.component';
+import { NgProgressModule } from '@ngx-progressbar/core';
+import { NgProgressHttpClientModule } from '@ngx-progressbar/http-client';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -85,6 +87,8 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     FullCalendarModule, // register FullCalendar with you app
     HttpClientModule,
     Ng2SearchPipeModule,
+    NgProgressModule.forRoot(),
+    NgProgressHttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
