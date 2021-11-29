@@ -40,7 +40,8 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td routerLink='/single-user' id="name">James Wanyama</td>
+                            <tr  *ngFor='let staff of lststaff'>
+                            <td id="name">{{staff.full_name}}</td>
                             <td>Information Technology</td>
                             <td>Software Developer</td>
                             <td>KES 103,000</td>
@@ -48,118 +49,7 @@
                             <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
                         </tr>
                         <tr>
-                            <td id="name">Grace Wandiri</td>
-                            <td>Information Technology</td>
-                            <td>ICT Manager</td>
-                            <td>KES 98,000</td>
-                            <td>Active</td>
-                            <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Anderson Karani</td>
-                            <td>Logistics & Operations</td>
-                            <td>Operations Manager</td>
-                            <td>KES 98,000</td>
-                            <td>Active</td>
-                            <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Abdallah Hassan</td>
-                            <td>Sales & Marketing</td>
-                            <td>Sales Manager</td>
-                            <td>KES 93,000</td>
-                            <td>Active</td>
-                            <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Mercy Andrews</td>
-                            <td>Sales & Marketing</td>
-                            <td>Business Development</td>
-                            <td>KES 45,000</td>
-                            <td>Active</td>
-                            <a><button type="App-Button" id="App-Button">Manage</button></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Sheila Martins</td>
-                            <td>Information Technology</td>
-                            <td>IT Assistant</td>
-                            <td>KES 58,000</td>
-                            <td>Active</td>
-                            <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Sharon Musyoka</td>
-                            <td>Sales & Marketing</td>
-                            <td>Sales Associate</td>
-                            <td>KES 45,000</td>
-                            <td>Active</td>
-                            <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Martin Mwenda</td>
-                            <td>Product Development</td>
-                            <td>UX Designer</td>
-                            <td>KES 58,000</td>
-                            <td>Active</td>
-                            <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Oscar Odhiambo</td>
-                            <td>Information Technology</td>
-                            <td>Quality Analyst</td>
-                            <td>KES 63,000</td>
-                            <td>Active</td>
-                            <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Ann Wanjiku</td>
-                            <td>Sales & Marketing</td>
-                            <td>Operations Manager</td>
-                            <td>KES 98,000</td>
-                            <td>Active</td>
-                            <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Oliver James</td>
-                            <td>Information Technology</td>
-                            <td>IT Asistant</td>
-                            <td>KES 58,000</td>
-                            <td>Active</td>
-                            <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Tabitha Wanja</td>
-                            <td>Logistics & Operations</td>
-                            <td>Operations Manager</td>
-                            <td>KES 98,000</td>
-                            <td>Active</td>
-                            <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Michael Njeru</td>
-                            <td>Human Resource</td>
-                            <td>Human Resource Manager</td>
-                            <td>KES 82,000</td>
-                            <td>Active</td>
-                            <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Mathew James</td>
-                            <td>Information Technology</td>
-                            <td>ICT Manager</td>
-                            <td>KES 98,000</td>
-                            <td>Active</td>
-                            <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Derrick Njue</td>
-                            <td>Finance</td>
-                            <td>Accountant</td>
-                            <td>KES 92,000</td>
-                            <td>Active</td>
-                            <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
-                        </tr>
-                    </tbody>
+                       </tbody>
                 </table>
             </div>
         </div>
