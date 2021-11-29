@@ -42,9 +42,9 @@
                         <tr>
                             <tr  *ngFor='let staff of lststaff'>
                             <td id="name">{{staff.full_name}}</td>
-                            <td>Information Technology</td>
-                            <td>Software Developer</td>
-                            <td>KES 103,000</td>
+                            <td>{{staff.department}}</td>
+                            <td>{{staff.position}}</td>
+                            <td>{{staff.gross_pay}}</td>
                             <td>Active</td>
                             <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
                         </tr>

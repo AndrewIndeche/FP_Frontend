@@ -68,160 +68,21 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td id="name">James Wanyama</td>
-                            <td id="name">KES 103,000</td>
-                            <td id="name">KES 103,000</td>
-                            <td id="name">KES 103,000</td>
-                            <td id="name">KES 103,000</td>
-                            <td id="name">KES 103,000</td>
-                            <td id="name">14/05/2021</td>
+                           <tr *ngFor='let staff of lststaff'>
+                            <td id="name">{{staff.full_name}}</td>
+                            <td id="name">{{staff.gross_pay}}</td>
+                            <td id="name">{{staff.net_pay}}</td>
+                            <td id="name">{{staff.tax_deducted}}</td>
+                            <td id="name">{{staff.insurance}}</td>
+                            <td id="name">{{staff.pension}}</td>
+                            <td id="name">{{staff.date_processed | date}}</td>
                             <a class><select class="form-select drops" id="App-Button" aria-label="">
                                     <option value="1">Actions</option>
-                                    <option value="2">Delete User</option>
-                                    <option value="3">Add User-details</option>
+                                    <option value="2">Completed</option>
+                                    <option value="3">In-Progress</option>
                                 </select></a>
                         </tr>
-                        <tr>
-                            <td>Grace Wandiri</td>
-                            <td>KES 98,000</td>
-                            <td>KES 98,000</td>
-                            <td>KES 98,000</td>
-                            <td>KES 98,000</td>
-                            <td>KES 98,000</td>
-                            <td>14/05/2021</td>
-                            <a><select class="form-select drops" id="App-Button" aria-label="">
-                                    <option value="1">Actions</option>
-                                    <option value="2">Delete User</option>
-                                    <option value="3">Add User-details</option>
-                                </select></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Anderson Karani</td>
-                            <td id="name">KES 98,000</td>
-                            <td id="name">KES 98,000</td>
-                            <td id="name">KES 98,000</td>
-                            <td id="name">KES 98,000</td>
-                            <td id="name">KES 98,000</td>
-                            <td id="name">14/05/2021</td>
-                            <a><select class="form-select drops" id="App-Button" aria-label="">
-                                    <option value="1">Actions</option>
-                                    <option value="2">Delete User</option>
-                                    <option value="3">Add User-details</option>
-                                </select></a>
-                        </tr>
-                        <tr>
-                            <td>Abdallah Hass</td>
-                            <td>KES 98,000</td>
-                            <td>KES 98,000</td>
-                            <td>KES 98,000</td>
-                            <td>KES 98,000</td>
-                            <td>KES 98,000</td>
-                            <td>14/05/2021</td>
-                            <a><select class="form-select drops" id="App-Button" aria-label="">
-                                    <option value="1">Actions</option>
-                                    <option value="2">Delete User</option>
-                                    <option value="3">Add User-details</option>
-                                </select></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Mercy Andrews</td>
-                            <td id="name">KES 45,000</td>
-                            <td id="name">KES 45,000</td>
-                            <td id="name">KES 45,000</td>
-                            <td id="name">KES 45,000</td>
-                            <td id="name">KES 45,000</td>
-                            <td id="name">14/05/2021</td>
-                            <a><select class="form-select drops" id="App-Button" aria-label="">
-                                    <option value="1">Actions</option>
-                                    <option value="2">Delete User</option>
-                                    <option value="3">Add User-details</option>
-                                </select></a>
-                        </tr>
-                        <tr>
-                            <td>Sheila Martins</td>
-                            <td>KES 30,000</td>
-                            <td>KES 30,000</td>
-                            <td>KES 30,000</td>
-                            <td>KES 30,000</td>
-                            <td>KES 30,000</td>
-                            <td>14/05/2021</td>
-                            <a><select class="form-select drops" id="App-Button" aria-label="">
-                                    <option value="1">Actions</option>
-                                    <option value="2">Delete User</option>
-                                    <option value="3">Add User-details</option>
-                                </select></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Sharon Musyoka</td>
-                            <td id="name">KES 45,000</td>
-                            <td id="name">KES 45,000</td>
-                            <td id="name">KES 45,000</td>
-                            <td id="name">KES 45,000</td>
-                            <td id="name">KES 45,000</td>
-                            <td id="name">14/05/2021</td>
-                            <a><select class="form-select drops" id="App-Button" aria-label="">
-                                    <option value="1">Actions</option>
-                                    <option value="2">Delete User</option>
-                                    <option value="3">Add User-details</option>
-                                </select></a>
-                        </tr>
-                        <tr>
-                            <td>Martin Mwenda</td>
-                            <td>KES 58,000</td>
-                            <td>KES 58,000</td>
-                            <td>KES 58,000</td>
-                            <td>KES 58,000</td>
-                            <td>KES 58,000</td>
-                            <td>14/05/2021</td>
-                            <a><select class="form-select drops" id="App-Button" aria-label="">
-                                    <option value="1">Actions</option>
-                                    <option value="2">Delete User</option>
-                                    <option value="3">Add User-details</option>
-                                </select></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Oscar Odhiambo</td>
-                            <td id="name">KES 63,000</td>
-                            <td id="name">KES 63,000</td>
-                            <td id="name">KES 63,000</td>
-                            <td id="name">KES 63,000</td>
-                            <td id="name">KES 63,000</td>
-                            <td id="name">14/05/2021</td>
-                            <a><select class="form-select drops" id="App-Button" aria-label="">
-                                    <option value="1">Actions</option>
-                                    <option value="2">Delete User</option>
-                                    <option value="3">Add User-details</option>
-                                </select></a>
-                        </tr>
-                        <tr>
-                            <td>Ann Wanjiku</td>
-                            <td>KES 45,000</td>
-                            <td>KES 45,000</td>
-                            <td>KES 45,000</td>
-                            <td>KES 45,000</td>
-                            <td>KES 45,000</td>
-                            <td>14/05/2021</td>
-                            <a><select class="form-select drops" id="App-Button" aria-label="">
-                                    <option value="1">Actions</option>
-                                    <option value="2">Delete User</option>
-                                    <option value="3">Add User-details</option>
-                                </select></a>
-                        </tr>
-                        <tr>
-                            <td id="name">Oliver James</td>
-                            <td id="name">KES 58,000</td>
-                            <td id="name">KES 58,000</td>
-                            <td id="name">KES 58,000</td>
-                            <td id="name">KES 58,000</td>
-                            <td id="name">KES 58,000</td>
-                            <td id="name">14/05/2021</td>
-                            <a><select class="form-select drops" id="App-Button" aria-label="">
-                                    <option value="1">Actions</option>
-                                    <option value="2">Delete User</option>
-                                    <option value="3">Add User-details</option>
-                                </select></a>
-                        </tr>
-                    </tbody>
+                      </tbody>
                 </table>
             </div>
         </div>
