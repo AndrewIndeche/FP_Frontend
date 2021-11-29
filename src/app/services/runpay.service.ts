@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 export class RunpayService {
   url='http://127.0.0.1:8000/api/'
   url2='https://financefuzu.herokuapp.com/finance/api/'
+  url3='https://machachari.herokuapp.com/finance/api/'
   name!:Ename;
   constructor(private http: HttpClient) {
    }
@@ -21,9 +22,15 @@ export class RunpayService {
     return this.http.get(this.url2 + 'approve/6/');
   }
   getStaff1() {
-    return this.http.get(this.url2 + 'staff/1/');
+    return this.http.get(this.url3 + 'staffw/');
   }
   getExp1() {
     return this.http.get(this.url2 + 'staff/2/');
+  }
+  getAdvanceRe() {
+    return this.http.get(this.url3 + 'approvew/');
+  }
+  getPaymentsRe() {
+    return this.http.get(this.url3 + 'payw/');
   }
 }

@@ -85,15 +85,15 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td style="color: #004763; font-weight: 600;">{{staff.name}}</td>
+                <tr *ngFor="let staf of staff">
+                    <td style="color: #004763; font-weight: 600;">{{staf.full_name}}</td>
                     <td>249 hrs</td>
-                    <td>Kshs 15,000</td>
+                    <td>KSH {{staf.amount}}</td>
                     <td>Emergency Funds</td>
-                    <td>30/06/21</td>
+                    <td>{{staf.created_at | date}}</td>
                     <td style="color: #43A047;">Approved</td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td style="color: #004763; font-weight: 600;">Grace Wandiri</td>
                     <td>249 hrs</td>
                     <td>Kshs 11,000</td>
@@ -132,7 +132,7 @@
                     <td>Bills</td>
                     <td>30/06/21</td>
                     <td style="color: #43A047;">Approved</td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
     </div>

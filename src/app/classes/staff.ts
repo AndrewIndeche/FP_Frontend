@@ -21,4 +21,9 @@ export class Staff{
     pension:any;
     sacco:any;
     medical_cover:any;
+
+    constructor(id:any,full_name:any){
+        this.id=id;
+        this.full_name=full_name;
+    }
 }
