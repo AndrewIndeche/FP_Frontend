@@ -35,8 +35,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a routerLink='/payments/Pay2'>
-                        <p style="margin-left: 40px;">Payment</p>
+                    <a routerLink='/payments'>
+                        <p style="margin-left: 40px;">Payments</p>
                     </a>
                 </li>
                 <li class="nav-item">
@@ -87,18 +87,18 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <tr *ngFor="let staf of staff">
                     <th scope="row"><input type="radio"></th>
-                    <td style="color: #004763; font-weight: 600;">{{staff.name}}</td>
+                    <td style="color: #004763; font-weight: 600;">{{staf.name}}</td>
                     <td>249 hrs</td>
-                    <td>Kshs 15,000</td>
+                    <td> Kshs {{staf.amount}}</td>
                     <td>Emergency Funds</td>
-                    <td>30/06/21</td>
+                    <td>{{staf.created_at |date}}</td>
                     <td>Direct Deposit</td>
                     <td>
                     </td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <th scope="row"><input type="radio"></th>
                     <td style="color: #004763; font-weight: 600;">Grace Wandiri</td>
                     <td>249 hrs</td>
@@ -142,7 +142,7 @@
                     <td>Bills</td>
                     <td>30/06/21</td>
                     <td>Direct Deposit</td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
     </div>

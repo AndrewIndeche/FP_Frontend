@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class StaffProcessService {
-  staff_url = "https://financegrp.herokuapp.com/employee/"
+  staff_url = "https://machachari.herokuapp.com/finance/api/staffw/"
   process!:Processes;
   
   getdetails(){

@@ -22,6 +22,7 @@ import { SingleUserComponent } from './single-user/single-user.component';
 import { StaffPayslipsComponent } from './staff-payslips/staff-payslips.component';
 import { AccSupportComponent  } from './acc-support/acc-support.component';
 import { StaffprocessComponent } from './staffprocess/staffprocess.component';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
 
@@ -48,6 +49,7 @@ const routes: Routes = [
   { path: 'p9-forms', component: P9FormsComponent },
   { path: 'acc-support/acc-support.component', component: AccSupportComponent },
   { path: 'staff/processes', component: StaffprocessComponent },
+  {path: '',component:LoginComponent},
 ];
 
 @NgModule({
