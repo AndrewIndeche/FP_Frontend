@@ -1,0 +1,51 @@
+<div class="payments">
+    <!-- top 3 buttons -->
+    <div class="topbuttons">
+        <button class="overview" type="button" routerLink="/payoverview">Overview</button>
+        <button class="run" type="button" [routerLink]="['/payroll/run_payroll/payments']">Run Payroll</button>
+        <button class="advance" type="button" routerLink='/advance/request'>Advance Request</button>
+    </div>
+    <!-- links after the buttons -->
+    <div class=" links">
+        <a routerLink="/payroll/run_payroll/new_run">New Run</a>
+        <a routerLink="/payroll/run_payroll/review">Review</a>
+        <a routerLink="/payroll/run_payroll/approve_run">Approve Run</a>
+        <a routerLink="/payroll/run_payroll/payments" id="new">Payments</a>
+    </div>
+    <!-- table section -->
+    <div class="table">
+        <table class="table">
+            <thead>
+                <tr id="new">
+                    <th scope="col">Pay ID</th>
+                    <th scope="col">Month</th>
+                    <th scope="col">Gross Pay</th>
+                    <th scope="col">Net Pay</th>
+                    <th scope="col">Total Staff</th>
+                    <th scope="col"> Status</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>{{payrollOne.pay_id}}</td>
+                    <td>{{payrollOne.month}}</td>
+                    <td>KES {{payrollOne.gross_pay}}</td>
+                    <td>KES {{payrollOne.net_pay}}</td>
+                    <td>13</td>
+                    <td>{{payrollOne.payroll_status}}</td>
+                    <td><button id="action">Send Payments</button></td>
+                </tr>
+                <tr>
+                    <td>{{payrollTwo.pay_id}}</td>
+                    <td>{{payrollTwo.month}}</td>
+                    <td>KES {{payrollTwo.gross_pay}}</td>
+                    <td>KES {{payrollTwo.net_pay}}</td>
+                    <td>13</td>
+                    <td>{{payrollTwo.payroll_status}}</td>
+                    <td><button id="action">Send Payments</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

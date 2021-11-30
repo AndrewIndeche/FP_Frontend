@@ -1,0 +1,125 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css"
+        integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css"
+        integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous" />
+</head>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-10">
+            <div class="body">
+              <button type="button" id="current" routerLink='/overview'>Overview</button>
+              <button type="button" routerLink='/staff/payslips'>Payslips</button>
+              <button type="button" routerLink='/p9-forms'>Year End</button>
+                <div class="wrapper">
+                    <span class="column"><img src="assets/img/avatar.png" alt="assets/img/avatar.png">
+                    </span>
+                    <span class="column">
+                        <p>Sheila Martins</p>
+                        <p>Information Technology Assistant</p>
+                        <p><i class="fas fa-map-marker-alt" aria-hidden="true">&nbsp;Nairobi,Kenya</i>
+                        <p>
+                        <p>Working Period:9 months</p>
+                    </span>
+                    <div class="col-3">
+                        <select class="form-select drops" id="dropdown" aria-label="">
+                            <option value="1">Actions</option>
+                            <option value="2">Delete User</option>
+                            <option value="3">Add User-details</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="card" id="card">
+                    <p>Payment Summary</p>
+                    <span class="column">
+                        <div class="col-18">
+                            <select class="form-select drops" id="selectpaydropdown" aria-label="">
+                                <option value="1">Select Payday</option>
+                                <option value="2">January</option>
+                                <option value="3">February</option>
+                                <option value="4">March</option>
+                                <option value="5">April</option>
+                                <option value="6">May</option>
+                                <option value="7">June</option>
+                                <option value="8">July</option>
+                                <option value="9">August</option>
+                                <option value="10">September</option>
+                                <option value="11">October</option>
+                                <option value="12">November</option>
+                                <option value="13">December</option>
+                            </select>
+                        </div>
+                        &nbsp;
+                        <button type="button" id="current">View Payslips</button>
+                    </span>
+                </div>
+                <div class="container">
+                    <button type="button" id="current" routerLink='/overview'>Overview</button>
+                    <button type="button" routerLink='/deductions'>Deductions</button>
+                    <button type="button" routerLink='/benefit'>Benefits</button>
+                </div>
+                <div class="wrapper" id="wrapper">
+                    <a>Employee Information</a>
+                    <b><i class="fa fa-pencil" aria-hidden="true"></i></b>
+                </div>
+                <table style="width:60%" id="table-left">
+                    <tbody>
+                        <tr>
+                            <td>Company</td>
+                            <td>Company Limited</td>
+                        </tr>
+                        <tr>
+                            <td>Work Email</td>
+                            <td>sheila.martins@company.com</td>
+                        </tr>
+                        <tr>
+                            <td>Personal Email</td>
+                            <td>sheilanjoki@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Mobile Number</td>
+                            <td>254 7xx xxx xxx</td>
+                        </tr>
+                        <tr>
+                            <td>Department</td>
+                            <td>Information Technology</td>
+                        </tr>
+                        <tr>
+                            <td>Employee ID</td>
+                            <td>CL/048/2021</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table style="width:37%" id="table-right">
+                    <tbody>
+                        <tr>
+                            <td>Employment date</td>
+                            <td>10/7/2021</td>
+                        </tr>
+                        <tr>
+                            <td>Insurance Number</td>
+                            <td>679292</td>
+                        </tr>
+                        <tr>
+                            <td>Tax Pin Number</td>
+                            <td>A547GSUIE67L</td>
+                        </tr>
+                        <tr>
+                            <td>Gross Pay</td>
+                            <td>KES 30,000</td>
+                        </tr>
+                        <tr>
+                            <td>Net Pay</td>
+                            <td>KES 26,300</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+button {
+  background-color: white;
+  color: #004763;
+  width: 197px;
+  height: 37px;
+  font-weight: bold;
+  border-radius: 2px solid white;
+
+}
+
+button:hover {
+  background-color: #004763;
+  color: white;
+}
+
+.btn-group button {
+
+  border: 1px solid black;
+
+  padding: 10px 2px;
+  /* Some padding */
+}
+
+/* .three{
+    display: flex;
+    border-radius: 2px solid black;
+} */
+#request {
+  display: flex;
+  /* margin: 3%; */
+
+}
+
+table {
+  overflow: auto;
+}
+
+.nav-item p:hover {
+  color: #004763;
+}

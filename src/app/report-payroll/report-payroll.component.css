@@ -1,0 +1,98 @@
+.topbtn {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.overview {
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #004763;
+  border: #004763 2px solid;
+  color: white;
+  border-radius: 2px;
+}
+
+.run {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 15px;
+  background-color: white;
+  border: #004763 2px solid;
+  color: #004763;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: #004763;
+  color: white
+}
+
+.shadow {
+  padding-top: 20px;
+  display: flex;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.display {
+  display: flex;
+}
+
+.download {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #004763;
+  border: #004763 2px solid;
+  color: white;
+  border-radius: 2px;
+}
+
+.dwnreport {
+  padding-top: 10px;
+}
+
+.drops {
+  margin-bottom: 10%;
+  border: 2px solid #004763;
+  margin-left: 1%;
+}
+
+#head {
+  margin-top: 5%
+}
+
+.perpendicular-line {
+  width: 100%;
+  margin: auto;
+  margin-top: 40%;
+  margin-bottom: 50px;
+  transform: rotate(90deg);
+  border-color: #1A85FD;
+}
+
+.amazing {
+  justify-content: center;
+}
+
+.reimbursed {
+  margin-top: 0%;
+  padding-top: 20px;
+  border: 2px solid gray;
+  padding-bottom: 20px;
+}
+
+.approved {
+  padding-top: 20px;
+  border: 2px solid gray;
+  padding-bottom: 20px;
+  margin-left: 2%;
+}
+
+.boxes {
+  padding-top: 1%;
+  padding-left: 1%;
+}
+
+.color {
+  color: #004763
+}

@@ -1,0 +1,27 @@
+button {
+  background-color: white;
+  color: #004763;
+  width: 197px;
+  height: 37px;
+  font-weight: bold;
+  border-radius: 2px solid white;
+
+}
+
+button:hover {
+  background-color: #004763;
+  color: white;
+}
+
+.nav-item p:hover {
+  color: #004763;
+}
+
+.tax {
+  display: flex;
+}
+
+.pay {
+  display: flex;
+  justify-content: space-evenly;
+}

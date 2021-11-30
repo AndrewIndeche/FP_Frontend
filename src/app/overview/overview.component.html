@@ -1,0 +1,57 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-16">
+            <div class="body">
+                <button type="button" id="current" routerLink='/overview'>Overview</button>
+                <button type="button" routerLink='/staff/payslips'>Payslips</button>
+                <button type="button" routerLink='/p9-forms'>Year End</button>
+                <div class="wrapper" id="wrapper">
+                    <span>Employment Type
+                        <div class="dropdown">
+                        <button class="dropbtn">All</button>
+                        <div class="dropdown-content">
+                          <a href="#">Permanent</a>
+                          <a href="#">Contract</a>
+                          <a href="#">Temporary</a>
+                        </div>
+                      </div>
+                      </span>
+                    <span>Department
+                      <div class="dropdown">
+                      <button class="dropbtn">All</button>
+                      <div class="dropdown-content">
+                        <a href="#">Finance</a>
+                        <a href="#">Human Resource</a>
+                        <a href="#">Administration</a>
+                      </div>
+                    </div>
+                      </span>
+                    <a><button type="button" id="lastinline">Download List</button></a>
+                </div>
+                <table style="width:90%">
+
+                    <thead id="thead">
+                        <th>Full Name</th>
+                        <th>Department</th>
+                        <th>Position</th>
+                        <th>Gross Pay</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <tr  *ngFor='let staff of lststaff'>
+                            <td id="name">{{staff.full_name}}</td>
+                            <td>{{staff.department}}</td>
+                            <td>{{staff.position}}</td>
+                            <td>{{staff.gross_pay}}</td>
+                            <td>Active</td>
+                            <a><button type="App-Button" routerLink='/single-user' id="App-Button">Manage</button></a>
+                        </tr>
+                        <tr>
+                       </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

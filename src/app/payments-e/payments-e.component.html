@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css"
+        integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css"
+        integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <title>Payments</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="btns">
+            <a routerLink='/payoverview'><button>Overview</button></a>
+            <button style="margin:7px; ">Run Payroll</button>
+            <button id="ad">Advance Request</button>
+        </div>
+        <br>
+        <div class="card-footer tab-card-header" id="ments">
+            <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a routerLink='/approve'>
+                        <p>Approve</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <p style="margin-left: 40px;" id="pay">Payment</p>
+                </li>
+                <li class="nav-item">
+                    <a routerLink='/past'>
+                        <p style="margin-left: 40px;">Past Requests</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+
+                    <th scope="col">Pay ID</th>
+                    <th scope="col">Month</th>
+                    <th scope="col">Total Amount</th>
+                    <th scope="col">Total Staff</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">ADV021</th>
+                    <td>December</td>
+                    <td>KES 38,000</td>
+                    <td>03</td>
+                    <td>pending</td>
+                    <td><button>Send Payments</button></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+input {
+  outline: #004763;
+  width: 300px;
+  height: 37px;
+  border: 1px solid #004763;
+  font-size: 0.9rem;
+  transition: all .25s ease;
+}
+
+input:focus {
+  padding-left: 15px;
+  padding-right: 5px;
+  border: 1px solid #004763;
+
+
+}
+
+::placeholder {
+  text-align: center;
+  color: #004763;
+}
+
+/* 
+@media all and (max-width:500px) {
+    input{
+        padding: 0px;
+    }
+    
+} */

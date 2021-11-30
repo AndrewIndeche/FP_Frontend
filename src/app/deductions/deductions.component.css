@@ -1,0 +1,129 @@
+.body {
+  margin-top: 3%;
+  margin-left: 6%;
+  margin-right: 8%;
+  margin-bottom: 1%;
+  padding-left: -12%;
+  padding-right: 20%;
+  padding-bottom: 0%;
+}
+
+button+button {
+  margin-left: 20px;
+}
+
+button {
+  width: 197px;
+  height: 37px;
+  color: #004763;
+  border-color: #004763;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border-radius: -2px;
+}
+
+#current {
+  background-color: #004763;
+  color: #FFFFFF;
+}
+
+.wrapper {
+  box-shadow: 3px 3px 6px gray;
+  padding-bottom: 1em;
+  margin-top: 3em;
+  padding-top: 1em;
+  padding-left: 1em;
+  padding-top: 3em;
+  padding-bottom: 10em;
+  padding-right: 10em;
+  margin-right: 1em;
+}
+
+#App-Button {
+  width: 100px;
+  height: 20px;
+  font-size: 12px;
+}
+
+#name {
+  color: #004763;
+}
+
+button:hover {
+  background: #004763;
+  color: #FFFFFF;
+}
+
+.column {
+  float: left;
+  width: 45%;
+}
+
+#card {
+  box-shadow: 3px 3px 6px gray;
+  padding-bottom: 1em;
+  margin-top: 3em;
+  padding-top: 1em;
+  padding-left: 1em;
+  float: right;
+  width: 23em;
+  height: 17em;
+  margin-right: -26em;
+  margin-top: -17em;
+  justify-content: center;
+  padding-left: 5.5em;
+}
+
+span+span {
+  margin-left: -5em;
+}
+
+.container {
+  padding-top: 4rem;
+  padding-left: 0.5rem;
+}
+
+#wrapper {
+  padding-top: 14px;
+  padding-bottom: 10px;
+  margin-right: 10em;
+  color: #004763;
+  white-space: nowrap;
+}
+
+tbody {
+  height: 180px;
+  padding: 10px;
+}
+
+#table-left {
+  margin-left: 14px;
+  margin-top: 2rem;
+}
+
+button:active {
+  background-color: #004763;
+}
+
+a+b {
+  margin-left: 31em;
+}
+
+.col-3 {
+  float: right;
+  color: #004763;
+}
+
+#dropdown {
+  color: #004763;
+  border-color: #004763;
+  margin-top: -10em;
+  margin-left: 8em;
+}
+
+#selectpaydropdown {
+  border-color: #004763;
+  margin-left: 0em;
+  padding-right: 10px;
+  width: 200px;
+}

@@ -1,0 +1,207 @@
+<div class="reportexpenses">
+
+    <div class="topbtn">
+
+        <button class="overview" type="button" [routerLink]="['/reports/payroll']">Payroll</button>
+        <button class="run" type="button" [routerLink]="['/reports/expenses']">Expenses</button>
+
+    </div>
+
+    <!-- form with the proceed button -->
+
+    <div class="forms">
+
+        <form class="row shadow">
+
+            <div class="col-2 display">
+                <p id="head"><strong>Run Type</strong></p>
+                <select class="form-select drops" aria-label="">
+                    <option selected hidden disabled></option>
+                    <option value="1">All</option>
+                    <option value="1">Weekly</option>
+                    <option value="2">Bi-Monthly</option>
+                    <option value="3">Monthly</option>
+                </select>
+            </div>
+
+            <div class="col-2 display">
+                <p id="head"><strong>Department</strong></p>
+                <select class="form-select drops" aria-label="">
+                    <option selected hidden disabled></option>
+                    <option value="1">Information Technology</option>
+                    <option value="2">Logistics & Operations</option>
+                    <option value="3">Sales & Marketing</option>
+                    <option value="4">Product Development</option>
+                    <option value="5">Human Resource</option>
+                    <option value="6">Finance</option>
+                </select>
+            </div>
+
+            <div class="col-2 display">
+                <p id="head"><strong>Month</strong></p>
+                <select class="form-select drops" aria-label="">
+                    <option selected hidden disabled></option>
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="1">April</option>
+                    <option value="2">May</option>
+                    <option value="3">June</option>
+                    <option value="1">July</option>
+                    <option value="2">August</option>
+                    <option value="3">September</option>
+                    <option value="1">October</option>
+                    <option value="2">November</option>
+                    <option value="3">December</option>
+                </select>
+            </div>
+            <div class="col-2 display">
+                <p id="head"><strong>Year</strong></p>
+                <select class="form-select drops" aria-label="">
+                    <option selected hidden disabled></option>
+                    <option value="1">2021</option>
+                    <option value="1">2020</option>
+                    <option value="2">2019</option>
+                    <option value="3">2018</option>
+                    <option value="4">2017</option>
+                    <option value="5">2016</option>
+                    <option value="6">2015</option>
+                    <option value="7">2014</option>
+                    <option value="8">2013</option>
+                    <option value="9">2012</option>
+                    <option value="10">2011</option>
+                    <option value="11">2010</option>
+                    <option value="12">2009</option>
+                    <option value="13">2008</option>
+                </select>
+            </div>
+
+            <div class="col-4 dwnreport">
+                <button class="download">Download Report</button>
+            </div>
+
+
+        </form>
+
+    </div>
+
+    <div class="row boxes">
+
+        <div class="col-3 reimbursed">
+
+            <p class="text-center color"><strong>Total Payroll Amount</strong></p>
+
+            <p class="text-center color"><strong>KES. {{ (payrolls.length) * 350000 }}</strong></p>
+
+            <div class="row amazing">
+
+                <div class="col-3 text-center">
+
+                    <p>{{ (( (payrolls.length ) - 2 ) * 3) / 100 }}%</p>
+
+                    <p>Change</p>
+
+                </div>
+
+                <div class="col-3">
+
+                    <hr class="perpendicular-line">
+
+                </div>
+
+                <div class="col-3">
+
+                    <p>KES. {{ 2 * 350000 }}</p>
+
+                    <p>Previous</p>
+
+                </div>
+
+            </div>
+
+            <div class=" dwnreport downin text-center">
+                <button class="download">Download</button>
+            </div>
+
+        </div>
+
+
+        <div class="col-3 approved">
+
+            <p class="text-center color"><strong>Total Staff on Payroll</strong></p>
+
+            <p class="text-center color"><strong>{{staffs.length}}</strong></p>
+
+            <div class="row amazing">
+
+                <div class="col-3 text-center">
+
+                    <p>{{ (( (staffs.length ) - 3 ) * 3) / 100 }}%</p>
+
+                    <p>Change</p>
+
+                </div>
+
+                <div class="col-3">
+
+                    <hr class="perpendicular-line">
+
+                </div>
+
+                <div class="col-3">
+
+                    <p>3</p>
+
+                    <p>Previous</p>
+
+                </div>
+
+            </div>
+
+            <div class=" dwnreport downin text-center">
+                <button class="download">Download</button>
+            </div>
+
+        </div>
+
+        <div class="col-3 approved">
+
+            <p class="text-center color"><strong>Total Deductions Paid</strong></p>
+
+            <p class="text-center color"><strong>KES. {{ (payrolls.length) * 50000 }}</strong></p>
+
+            <div class="row amazing">
+
+                <div class="col-3 text-center">
+
+                    <p>{{ (( (payrolls.length ) - 2 ) * 3) / 100 }}%</p>
+
+                    <p>Change</p>
+
+                </div>
+
+                <div class="col-3">
+
+                    <hr class="perpendicular-line">
+
+                </div>
+
+                <div class="col-3">
+
+                    <p>KES. {{ 2* 50000 }}</p>
+
+                    <p>Previous</p>
+
+                </div>
+
+            </div>
+
+            <div class=" dwnreport downin text-center">
+                <button class="download">Download</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

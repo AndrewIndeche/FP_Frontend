@@ -1,0 +1,189 @@
+.aprove{
+    width: 100%;
+}
+.topbuttons {
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.overview {
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: white;
+  border: #004763 2px solid;
+  color: #004763;
+  border-radius: 2px;
+}
+
+.run {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 15px;
+  background-color: #004763;
+  border: #004763 2px solid;
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+.advance {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 15px;
+  background-color: white;
+  border: #004763 2px solid;
+  color: #004763;
+  border-radius: 2px;
+}
+
+button:hover {
+  background-color: #004763;
+  color: white
+}
+
+/* links styles */
+.links {
+  border: 2px solid #004763;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#new,
+.new {
+  color: #004763
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  padding: 30px;
+}
+
+.links a:active {
+  text-decoration: none;
+  color: #004763;
+}
+
+.download{
+    width: 100%;
+    padding: 10px;
+}
+.pad{
+  font-family: 'Josefin Sans',
+  sans-serif;
+}
+
+.download a {
+  color: #004763;
+  text-decoration: none;
+  padding-left: 75%;
+  margin-left: auto;
+  padding-top: 10px;
+}
+
+.box {
+  border: 2px solid #004763;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-top: 10px;
+  width: 98%;
+}
+
+#minis {
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold
+}
+
+hr {
+  text-align: center;
+  margin-left: 590px;
+  margin-right: 590px;
+}
+
+#line {
+  padding-left: 31%;
+  padding-right: 15%;
+  color: #004763;
+  font-weight: bold;
+}
+
+#figures {
+ padding-left: 31%;
+}
+
+#right {
+  padding-left: 30.75%;
+}
+
+#right1 {
+  padding-left: 33%;
+}
+
+#right2 {
+  padding-left: 31%;
+}
+
+#total {
+  padding-left: 52%;
+}
+
+#right3 {
+  padding-left: 2%;
+}
+
+#figures1 {
+  padding-left: 31%;
+  font-weight: bold;
+}
+
+#paye {
+  padding-left: 40%;
+  font-weight: lighter;
+}
+
+#nhif {
+  padding-left: 31.25%;
+  font-weight: lighter;
+}
+
+#nssf {
+  padding-left: 30.5%;
+  font-weight: lighter;
+}
+
+#taxes {
+  text-align: center
+}
+
+.thick {
+  padding-left: 33%;
+  padding-bottom: 20px;
+}
+
+.buttons {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.back {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 15px;
+  background-color: white;
+  border: #004763 2px solid;
+  color: #004763;
+  border-radius: 2px;
+}
+
+.approve {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 15px;
+  background-color: #004763;
+  border: #004763 2px solid;
+  color: #ffffff;
+  border-radius: 2px;
+}
