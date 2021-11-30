@@ -1,20 +1,16 @@
 <html>
-
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-
 <div class="approvals">
     <div class="container">
         <div class="top-buttons">
             <a routerLink="/expense-overview" id="overviews"> Overviews</a>
             <a routerLink="/approvals" id="approvals"> Approvals</a>
             <a routerLink="/payments" id="payments"> Payments</a>
-
         </div><br><br>
-
         <div class="second-buttons">
             <select id="All">
                 <option value="approve">Approve All</option>
@@ -23,12 +19,9 @@
             <select id="All">
                 <option value="reject">Reject All</option>
                 <option value="reject">Reject Selected</option>
-
             </select>
-            <h3 style="padding-left: 10px; color:#004763;"><strong>KES 1,478,600</strong></h3>
-
+            <p style="padding-left: 50px; color:#004763;"><strong>KES 1,478,600</strong></p>
         </div>
-
         <div class="table">
             <table class="table">
                 <thead>
@@ -39,20 +32,26 @@
                         <th scope="col">Amount</th>
                         <th scope="col">Merchant</th>
                         <th scope="col">Date</th>
-
-
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td><input type="radio" id="one" name="" value="" checked></td>
+                    <tr *ngFor = 'let approve of approveAll'>
+                        <td><input type="radio" id="one" name="" value=""></td>
                         <td>R238SN58</td>
-                        <td id="name">James Wanyama</td>
-                        <td>KES 3,000</td>
+                        <td id="name">{{approve.name}}</td>
+                        <td> KES  {{approve.amount}}</td>
+                        <td>{{approve.merchant}}</td>
+                        <td>{{approve.date_processed|date}}</td>
+                    </tr>
+                    <!-- <tr>
+                        <td><input type="radio" id="one" name="" value="" ></td>
+                        <td>R238SN58</td>
+                        <td id="name">{{expenseA.name}}</td>
+                        <td>{{expenseA.amount}}</td>
                         <td>KEFFRA SHIPPING LIMITED</td>
                         <td>12/02/2021</td>
                     </tr>
-                    <td><input type="radio" id="one" name="" value="" checked></td>
+                    <td><input type="radio" id="one" name="" value="" ></td>
                     <td>R238SN58</td>
                     <td id="name">Grace Wandiri</td>
                     <td>KES 4,000</td>
@@ -65,7 +64,6 @@
                         <td>KES 3,400</td>
                         <td>KEFFRA SHIPPING LIMITED</td>
                         <td>12/02/2021</td>
-
                     </tr>
                     <tr>
                         <td><input type="radio" id="one" name="" value=""></td>
@@ -76,7 +74,7 @@
                         <td>12/02/2021</td>
                     </tr>
                     <tr>
-                        <td><input type="radio" id="one" name="" value="" checked></td>
+                        <td><input type="radio" id="one" name="" value="" ></td>
                         <td>R238SN58</td>
                         <td id="name">Mercy Andrews</td>
                         <td>KES 120,000</td>
@@ -92,48 +90,82 @@
                         <td>12/02/2021</td>
                     </tr>
                     <tr>
-                        <td><input type="radio" id="one" name="" value="" checked></td>
+                        <td><input type="radio" id="one" name="" value="" ></td>
                         <td>R238SN58</td>
                         <td id="name">Grace Wandiri</td>
                         <td>KES 40,000</td>
                         <td>Jambojet</td>
                         <td>12/02/2021</td>
-                    </tr>
-                    <tr>
+                    </tr> -->
+                    <!-- <tr>
                         <td><input type="radio" id="one" name="" value=""></td>
                         <td>R238SN58</td>
-                        <td id="name">James Wanyama</td>
-                        <td>KES 3,000</td>
-                        <td>KEFFRA SHIPPING LIMITED</td>
-                        <td>12/02/2021</td>
-
-                    </tr>
-                    <tr>
-                        <td><input type="radio" id="one" name="" value=""></td>
-                        <td>R238SN58</td>
-                        <td id="name">Anderson Karani</td>
-                        <td>KES 3,400</td>
+                        <td id="name">{{expenseA.name}}</td>
+                        <td>{{expenseA.amount}}</td>
                         <td>KEFFRA SHIPPING LIMITED</td>
                         <td>12/02/2021</td>
                     </tr>
                     <tr>
-                        <td><input type="radio" id="one" name="" value="" checked></td>
+                        <td><input type="radio" id="one" name="" value=""></td>
                         <td>R238SN58</td>
                         <td id="name">Grace Wandiri</td>
                         <td>KES 40,000</td>
                         <td>Jambojet</td>
                         <td>12/02/2021</td>
-                    </tr>
-
-
+                    </tr> -->
                 </tbody>
             </table>
         </div>
     </div>
 </div>
+    <!-- <script>
+        $(document).ready(function() {
+            $(function() {
+                var allRadios = $('input[type=radio]')
+                var radioChecked;
 
+                var setCurrent =
+                    function(e) {
+                        var obj = e.target;
 
+                        radioChecked = $(obj).attr('checked');
+                    }
 
+                var setCheck =
+                    function(e) {
 
+                        if (e.type == 'keypress' && e.charCode != 32) {
+                            return false;
+                        }
 
+                        var obj = e.target;
+
+                        if (radioChecked) {
+                            $(obj).attr('checked', false);
+                        } else {
+                            $(obj).attr('checked', true);
+                        }
+                    }
+
+                $.each(allRadios, function(i, val) {
+                    var label = $('label[for=' + $(this).attr("id") + ']');
+
+                    $(this).bind('mousedown keydown', function(e) {
+                        setCurrent(e);
+                    });
+
+                    label.bind('mousedown keydown', function(e) {
+                        e.target = $('#' + $(this).attr("for"));
+                        setCurrent(e);
+                    });
+
+                    $(this).bind('click', function(e) {
+                        setCheck(e);
+                    });
+
+                });
+
+            });
+        });
+    </script> -->
 </html>

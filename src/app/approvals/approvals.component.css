@@ -1,18 +1,13 @@
 .container {
-  margin-left: 50px;
+  margin-left: 0px;
 }
-
 .approvals {
   width: 100%;
 }
-
-
 .top-buttons {
   padding-top: 10px;
   padding-left: 10px;
-
 }
-
 #approvals {
   padding-left: 40px;
   padding-right: 40px;
@@ -23,7 +18,6 @@
   border-radius: 2px;
   text-decoration: none;
 }
-
 #payments {
   padding-left: 40px;
   padding-right: 40px;
@@ -33,9 +27,7 @@
   color: #004763;
   border-radius: 2px;
   text-decoration: none;
-
 }
-
 #overviews {
   padding-left: 40px;
   padding-right: 40px;
@@ -46,7 +38,6 @@
   border-radius: 2px;
   text-decoration: none;
 }
-
 #approve,
 #reject {
   padding-left: 40px;
@@ -59,33 +50,27 @@
   border-radius: 2px;
   text-decoration: none;
 }
-
 .expense-table {
-  border: 2px solid #004763;
+  /* border: 2px solid #004763; */
   margin-left: 1%;
   margin-right: 1%;
 }
-
 .expense-type,
 .status,
 .month,
 .year {
   display: flex;
-
 }
-
 .table {
   border-collapse: collapse;
 }
-
 #new {
   color: #004763;
 }
-
 #All {
   padding-left: 40px;
   padding-right: 40px;
-  height: 20px;
+  /* height: 20px; */
   margin-left: 15px;
   background-color: white;
   border: #004763 2px solid;
@@ -93,32 +78,25 @@
   border-radius: 2px;
   text-decoration: none;
 }
-
 .shadow {
   padding-left: 1%;
   padding-right: 1%;
 }
-
 .table {
   margin-left: 1%;
   margin-right: 1%;
 }
-
 #send-payments {
   background-color: #004763;
   color: white;
 }
-
 #name {
   color: #004763;
 }
-
 table {
-
-  height: 500px;
+  /* height: 500px; */
   overflow-y: scroll;
 }
-
 .second-buttons {
   display: flex;
   margin-left: 10px;

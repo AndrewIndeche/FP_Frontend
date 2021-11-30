@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./acc-support.component.css']
 })
 export class AccSupportComponent implements OnInit {
+  getName(){
+    alert("Thank you for your message,we will get back to you")
+  }
 
   constructor() { }
 

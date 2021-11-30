@@ -5,13 +5,11 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 <div >
-
     <div class="top-buttons">
         <a routerLink="/expense-overview" id="overviews"> Overviews</a>
         <a routerLink="/approvals" id="approvals"> Approvals</a>
         <a routerLink="/payments" id="payments"> Payments</a>
     </div><br><br>
-
     <div class="table">
         <table class="table">
             <thead>
@@ -21,41 +19,35 @@
                     <th scope="col">Total Amount</th>
                     <th scope="col">Status</th>
                     <th scope="col">Action</th>
-
-
                 </tr>
             </thead>
             <tbody>
                 <tr style="background-color:#F1F1F0;">
-                    <td>EXPS/06/08/021</td>
+                    <td>{{paymentOne.pay_id}}</td>
                     <td>48</td>
-                    <td>KES 450,000.00</td>
+                    <td>{{paymentOne.net_pay}}</td>
                     <td>Pending Payment</td>
-                    <td><button id="send-payments">Send Payments</button></td>
-
+                    <td><input type="button" id="buttonsend" style="background-color: #004763; color:white;" value="Send Payments"  onclick="this.style.backgroundColor = '#43A047'; this.style.color = 'white';" />
+                    </td>
                 </tr>
                 <tr>
-                    <td>EXPS/06/08/021</td>
+                    <td>{{paymentTwo.pay_id}}</td>
                     <td>46</td>
-                    <td>KES 450,000.00</td>
+                    <td>{{paymentTwo.net_pay}}</td>
                     <td>Pending Payment</td>
-                    <td><button id="send-payments">Send Payments</button></td>
-
+                    <td><input type="button" id="buttonsend" style="background-color: #004763; color:white;" value="Send Payments"  onclick="this.style.backgroundColor = '#43A047'; this.style.color = 'white';" />
+                    </td>
                 </tr>
                 <tr style="background-color:#F1F1F0;">
-                    <td>EXPS/06/08/021</td>
+                    <td>{{paymentThree.pay_id}}</td>
                     <td>3</td>
-                    <td>KES 450,000.00</td>
+                    <td>{{paymentThree.net_pay}}</td>
                     <td>Pending Payment</td>
-                    <td><button id="send-payments">Send Payments</button></td>
+                    <td><input type="button" id="buttonsend" style="background-color: #004763; color:white;" value="Send Payments"  onclick="this.style.backgroundColor = '#43A047'; this.style.color = 'white';" />
+                    </td>
                 </tr>
-
-
             </tbody>
         </table>
     </div>
-
 </div>
-
-
 </html>

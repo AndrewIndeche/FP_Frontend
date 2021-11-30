@@ -10,7 +10,6 @@
     integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css"
     integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous" />
-
 <body>
     <div>
         <div class="top-buttons">
@@ -18,7 +17,6 @@
             <a routerLink="/approvals" id="approvals"> Approvals</a>
             <a routerLink="/payments" id="payments"> Payments</a>
         </div><br><br>
-
         <div class="row  expense-table" style="color: #004763;">
             <div class="col-3">
                 <p>Total Completed</p>
@@ -50,21 +48,19 @@
         <br>
         <div class="row shadow">
             <div class="col-3 expense-type">
-                <p>Expense Type</p>
+                <p>Type</p>
                 <select id="All">
                     <option value="type1">Expense1</option>
                     <option value="type2">Expense2</option>
                     <option value="type3">Expense3</option>
                 </select>
             </div>
-
             <div class="col-3 status">
                 <p>Status</p>
                 <select id="All">
                     <option value="status1">Pending</option>
                     <option value="status2">Approved</option>
                     <option value="status3">Rejected</option>
-
                 </select>
             </div>
             <div class="col-3 month">
@@ -111,98 +107,20 @@
                         <th scope="col">Date</th>
                         <th scope="col">Amount</th>
                         <th scope="col">Status</th>
-
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr *ngFor = 'let exp of allExpense'>
                         <td>R238SN58</td>
-                    <td id="new">{{expenses.name}}</td>
-                       <td>KEFFRA SHIPPING LIMITED</td>
-                        <td>12/02/2021</td>
-                        <td>KES 3000</td>
-                        <td id=approve>Approved</td>
-
-                    </tr>
-
-                        <tr>
-                        <td>R238SN58</td>
-                        <td id="new">Luke Karanja</td>
-                        <td>Jambojet</td>
-                        <td>12/02/2021</td>
-                        <td>KES 40,000</td>
-                        <td id="approve">Approved</td>
-
-                    </tr>
-                    <tr>
-                        <td>R238SN58</td>
-                        <td id="new">Anderson Karani</td>
-                        <td>KEFFRA SHIPPING LIMITED</td>
-                        <td>12/02/2021</td>
-                        <td>KES 3,400</td>
-                        <td id="approve">Approved</td>
-                    </tr>
-                    <tr>
-                        <td>R238SN58</td>
-                        <td id="new">Abdallah Hassan</td>
-                        <td>KEFFRA SHIPPING LIMITED</td>
-                        <td>12/02/2021</td>
-                        <td>KES 45,000</td>
-                        <td id="approve">Approved</td>
-                    </tr>
-                    <tr>
-                        <td>R238SN58</td>
-                        <td id="new">Mercy Andrews</td>
-                        <td>Amazon Prime</td>
-                        <td>12/02/2021</td>
-                        <td>KES 120,000</td>
-                        <td id="reject">Rejected</td>
-                    </tr>
-                    <tr>
-                        <td>R238SN58</td>
-                        <td id="new">Sheila Marins</td>
-                        <td>Amazon Prime</td>
-                        <td>12/02/2021</td>
-                        <td>KES 2000</td>
-                        <td id="approve">Approved</td>
-                    </tr>
-                    <tr>
-                        <td>R238SN58</td>
-                        <td id="new">Sharon Musyoka</td>
-                        <td>Amazon Prime</td>
-                        <td>12/02/2021</td>
-                        <td>KES 10,000</td>
-                        <td id="approve">Approved</td>
-
-                    </tr>
-                    <tr>
-                        <td>R238SN58</td>
-                        <td id="new">Martin Mwenda</td>
-                        <td>Jambojet</td>
-                        <td>12/02/2021</td>
-                        <td>KES 12,000</td>
-                        <td id="approve">Approved</td>
-                    </tr>
-                    <tr>
-                        <td>R238SN58</td>
-                        <td id="new">Oscar Odhiambo</td>
-                        <td>Netflix</td>
-                        <td>12/02/2021</td>
-                        <td>KES 123,930</td>
-                        <td id="reject">Rejected</td>
-                    </tr>
-                    <tr>
-                        <td>R238SN58</td>
-                        <td id="new">Ann Wanjiku</td>
-                        <td>Amazon Prime</td>
-                        <td>12/02/2021</td>
-                        <td>KES 300</td>
-                        <td id="approve">Approved</td>
+                        <td id="new">{{exp.name}}</td>
+                        <td>{{exp.merchant}}</td>
+                        <td>{{exp.date_processed | date}}</td>
+                        <td>KES   {{exp.amount}}</td>
+                        <td id=approve>{{exp.status}}</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-
 </body>
 </html>
